@@ -1,5 +1,5 @@
 {
-    "name": "validaide/google-map-bundle",
+    "name": "validaide/googlemapbundle",
     "type": "symfony-bundle",
     "description": "Provides a google map integration for your Symfony2 Project.",
     "keywords": [
