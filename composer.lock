@@ -1884,12 +1884,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "a7164d0e31ee9a7b8819c359b67819adddccebfd"
+                "reference": "c335960b85640b5b3e1abf82ebb93021323814d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/a7164d0e31ee9a7b8819c359b67819adddccebfd",
-                "reference": "a7164d0e31ee9a7b8819c359b67819adddccebfd",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/c335960b85640b5b3e1abf82ebb93021323814d8",
+                "reference": "c335960b85640b5b3e1abf82ebb93021323814d8",
                 "shasum": ""
             },
             "require": {
@@ -1950,7 +1950,7 @@
             "support": {
                 "source": "https://github.com/validaide/google-map/tree/development"
             },
-            "time": "2020-06-16T12:24:05+00:00"
+            "time": "2020-06-16T12:58:54+00:00"
         }
     ],
     "packages-dev": [
