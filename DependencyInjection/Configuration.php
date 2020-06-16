@@ -26,8 +26,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = $this->createTreeBuilder();
-        $children = $treeBuilder->root('ivory_google_map')
+        $treeBuilder = new TreeBuilder('ivory_google_map');
+        $children    = $treeBuilder->getRootNode()
             ->children()
             ->append($this->createMapNode())
             ->append($this->createStaticMapNode());
@@ -59,9 +59,9 @@ class Configuration implements ConfigurationInterface
         return $this->createNode('map')
             ->addDefaultsIfNotSet()
             ->children()
-                ->booleanNode('debug')->defaultValue('%kernel.debug%')->end()
-                ->scalarNode('language')->defaultValue('%locale%')->end()
-                ->scalarNode('api_key')->end()
+            ->booleanNode('debug')->defaultValue('%kernel.debug%')->end()
+            ->scalarNode('language')->defaultValue('%locale%')->end()
+            ->scalarNode('api_key')->end()
             ->end();
     }
 
@@ -73,8 +73,8 @@ class Configuration implements ConfigurationInterface
         return $this->createNode('static_map')
             ->addDefaultsIfNotSet()
             ->children()
-                ->scalarNode('api_key')->end()
-                ->append($this->createBusinessAccountNode(false))
+            ->scalarNode('api_key')->end()
+            ->append($this->createBusinessAccountNode(false))
             ->end();
     }
 
@@ -86,7 +86,7 @@ class Configuration implements ConfigurationInterface
      */
     private function createServiceNode($service, $http)
     {
-        $node = $this->createNode($service);
+        $node     = $this->createNode($service);
         $children = $node
             ->children()
             ->scalarNode('api_key')->end()
@@ -95,21 +95,21 @@ class Configuration implements ConfigurationInterface
         if ($http) {
             $children
                 ->scalarNode('client')
-                    ->isRequired()
-                    ->cannotBeEmpty()
+                ->isRequired()
+                ->cannotBeEmpty()
                 ->end()
                 ->scalarNode('message_factory')
-                    ->isRequired()
-                    ->cannotBeEmpty()
+                ->isRequired()
+                ->cannotBeEmpty()
                 ->end()
                 ->scalarNode('format')->end();
         } else {
             $node
                 ->beforeNormalization()
-                    ->ifNull()
-                    ->then(function () {
-                        return [];
-                    })
+                ->ifNull()
+                ->then(function () {
+                    return [];
+                })
                 ->end();
         }
 
@@ -123,11 +123,11 @@ class Configuration implements ConfigurationInterface
      */
     private function createBusinessAccountNode($service)
     {
-        $node = $this->createNode('business_account');
+        $node         = $this->createNode('business_account');
         $clientIdNode = $node->children()
             ->scalarNode('secret')
-                ->isRequired()
-                ->cannotBeEmpty()
+            ->isRequired()
+            ->cannotBeEmpty()
             ->end()
             ->scalarNode('channel')->end()
             ->scalarNode('client_id');
@@ -149,14 +149,8 @@ class Configuration implements ConfigurationInterface
      */
     private function createNode($name, $type = 'array')
     {
-        return $this->createTreeBuilder()->root($name, $type);
-    }
+        $treeBuilder = new TreeBuilder($name, $type);
 
-    /**
-     * @return TreeBuilder
-     */
-    private function createTreeBuilder()
-    {
-        return new TreeBuilder();
+        return $treeBuilder->getRootNode();
     }
 }

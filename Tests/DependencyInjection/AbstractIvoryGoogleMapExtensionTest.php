@@ -14,7 +14,6 @@ namespace Ivory\GoogleMapBundle\Tests\DependencyInjection;
 use Http\Client\HttpClient;
 use Http\Message\MessageFactory;
 use Ivory\GoogleMap\Helper\ApiHelper;
-use Ivory\GoogleMap\Helper\Formatter\Formatter;
 use Ivory\GoogleMap\Helper\MapHelper;
 use Ivory\GoogleMap\Helper\PlaceAutocompleteHelper;
 use Ivory\GoogleMap\Helper\StaticMapHelper;
@@ -30,13 +29,14 @@ use Ivory\GoogleMap\Service\TimeZone\TimeZoneService;
 use Ivory\GoogleMapBundle\DependencyInjection\IvoryGoogleMapExtension;
 use Ivory\GoogleMapBundle\IvoryGoogleMapBundle;
 use Ivory\Serializer\SerializerInterface;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-abstract class AbstractIvoryGoogleMapExtensionTest extends \PHPUnit_Framework_TestCase
+abstract class AbstractIvoryGoogleMapExtensionTest extends TestCase
 {
     /**
      * @var ContainerBuilder
@@ -74,7 +74,7 @@ abstract class AbstractIvoryGoogleMapExtensionTest extends \PHPUnit_Framework_Te
     protected function setUp()
     {
         $this->container = new ContainerBuilder();
-        $this->container->setParameter('kernel.root_dir', __DIR__.'/..');
+        $this->container->setParameter('kernel.root_dir', __DIR__ . '/..');
         $this->container->setParameter('kernel.debug', $this->debug = false);
         $this->container->setParameter('locale', $this->locale = 'en');
         $this->container->set('httplug.client', $this->client = $this->createClientMock());
@@ -95,9 +95,9 @@ abstract class AbstractIvoryGoogleMapExtensionTest extends \PHPUnit_Framework_Te
     {
         $this->container->compile();
 
-        $apiHelper = $this->container->get('ivory.google_map.helper.api');
-        $mapHelper = $this->container->get('ivory.google_map.helper.map');
-        $staticMapHelper = $this->container->get('ivory.google_map.helper.map.static');
+        $apiHelper               = $this->container->get('ivory.google_map.helper.api');
+        $mapHelper               = $this->container->get('ivory.google_map.helper.map');
+        $staticMapHelper         = $this->container->get('ivory.google_map.helper.map.static');
         $placeAutocompleteHelper = $this->container->get('ivory.google_map.helper.place_autocomplete');
 
         $this->assertInstanceOf(ApiHelper::class, $apiHelper);
@@ -105,7 +105,7 @@ abstract class AbstractIvoryGoogleMapExtensionTest extends \PHPUnit_Framework_Te
         $this->assertInstanceOf(StaticMapHelper::class, $staticMapHelper);
         $this->assertInstanceOf(PlaceAutocompleteHelper::class, $placeAutocompleteHelper);
 
-        $formatter = $this->container->get('ivory.google_map.helper.formatter');
+        $formatter      = $this->container->get('ivory.google_map.helper.formatter');
         $loaderRenderer = $this->container->get('ivory.google_map.helper.renderer.loader');
 
         $this->assertSame($this->debug, $formatter->isDebug());
