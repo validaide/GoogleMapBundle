@@ -67,6 +67,7 @@
         <service
             id="ivory.google_map.helper.renderer.control.manager"
             class="Ivory\GoogleMap\Helper\Renderer\Control\ControlManagerRenderer"
+            public="true"
         />
 
         <service
@@ -240,6 +241,7 @@
             id="ivory.google_map.helper.renderer.loader"
             class="Ivory\GoogleMap\Helper\Renderer\LoaderRenderer"
             parent="ivory.google_map.helper.renderer.json"
+            public="true"
         />
 
         <service
@@ -308,6 +310,7 @@
         <service
             id="ivory.google_map.helper.renderer.overlay.extendable"
             class="Ivory\GoogleMap\Helper\Renderer\Overlay\Extendable\ExtendableRenderer"
+            public="true"
         />
 
         <service
