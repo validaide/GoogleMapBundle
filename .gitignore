@@ -9,5 +9,8 @@
 /.php_cs.cache
 
 # PHPUnit
-/build
+/build/tests
 /phpunit.xml
+
+# PHPStorm
+/.idea
