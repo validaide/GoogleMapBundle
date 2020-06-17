@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d197b9c35f97bb1a2a50e7098da9dce2",
+    "content-hash": "a66ceb4b134597c4aa0cbde55b89fa7b",
     "packages": [
         {
             "name": "egeloen/json-builder",
@@ -1884,7 +1884,7 @@
             "dist": {
                 "type": "path",
                 "url": "../google-map",
-                "reference": "beea873380e94dff4e2a8d82a92dd9fcf133759b"
+                "reference": "0112d75bb6c4ead396b27436b790688e5529b1e3"
             },
             "require": {
                 "egeloen/json-builder": "^3.0",
@@ -1941,7 +1941,10 @@
                 "google",
                 "map",
                 "validaide"
-            ]
+            ],
+            "transport-options": {
+                "symlink": true
+            }
         }
     ],
     "packages-dev": [
