@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2a4ebcbb15459529ff83c1af58f9b7f",
+    "content-hash": "d197b9c35f97bb1a2a50e7098da9dce2",
     "packages": [
         {
             "name": "egeloen/json-builder",
@@ -1881,19 +1881,14 @@
         {
             "name": "validaide/google-map",
             "version": "dev-development",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/validaide/google-map.git",
-                "reference": "c335960b85640b5b3e1abf82ebb93021323814d8"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/c335960b85640b5b3e1abf82ebb93021323814d8",
-                "reference": "c335960b85640b5b3e1abf82ebb93021323814d8",
-                "shasum": ""
+                "type": "path",
+                "url": "../google-map",
+                "reference": "beea873380e94dff4e2a8d82a92dd9fcf133759b"
             },
             "require": {
                 "egeloen/json-builder": "^3.0",
+                "ext-json": "*",
                 "php": "^7.0",
                 "symfony/event-dispatcher": "3.4.*"
             },
@@ -1946,11 +1941,7 @@
                 "google",
                 "map",
                 "validaide"
-            ],
-            "support": {
-                "source": "https://github.com/validaide/google-map/tree/development"
-            },
-            "time": "2020-06-16T12:58:54+00:00"
+            ]
         }
     ],
     "packages-dev": [
@@ -2522,16 +2513,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.5.4",
+            "version": "6.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "a4a1b6930528a8f7ee03518e6442ec7a44155d9d"
+                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a4a1b6930528a8f7ee03518e6442ec7a44155d9d",
-                "reference": "a4a1b6930528a8f7ee03518e6442ec7a44155d9d",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
+                "reference": "9d4290de1cfd701f38099ef7e183b64b4b7b0c5e",
                 "shasum": ""
             },
             "require": {
@@ -2539,7 +2530,7 @@
                 "guzzlehttp/promises": "^1.0",
                 "guzzlehttp/psr7": "^1.6.1",
                 "php": ">=5.5",
-                "symfony/polyfill-intl-idn": "1.17.0"
+                "symfony/polyfill-intl-idn": "^1.17.0"
             },
             "require-dev": {
                 "ext-curl": "*",
@@ -2585,7 +2576,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2020-05-25T19:35:05+00:00"
+            "time": "2020-06-16T21:01:06+00:00"
         },
         {
             "name": "guzzlehttp/promises",
