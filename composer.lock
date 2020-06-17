@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a66ceb4b134597c4aa0cbde55b89fa7b",
+    "content-hash": "3cacda093c6023a528469d7321c2d824",
     "packages": [
         {
             "name": "egeloen/json-builder",
@@ -1881,10 +1881,16 @@
         {
             "name": "validaide/google-map",
             "version": "dev-development",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/validaide/google-map.git",
+                "reference": "7e4e608ad340015cea736e49a6785b487c310844"
+            },
             "dist": {
-                "type": "path",
-                "url": "../google-map",
-                "reference": "0112d75bb6c4ead396b27436b790688e5529b1e3"
+                "type": "zip",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/7e4e608ad340015cea736e49a6785b487c310844",
+                "reference": "7e4e608ad340015cea736e49a6785b487c310844",
+                "shasum": ""
             },
             "require": {
                 "egeloen/json-builder": "^3.0",
@@ -1942,9 +1948,10 @@
                 "map",
                 "validaide"
             ],
-            "transport-options": {
-                "symlink": true
-            }
+            "support": {
+                "source": "https://github.com/validaide/google-map/tree/development"
+            },
+            "time": "2020-06-17T12:20:48+00:00"
         }
     ],
     "packages-dev": [

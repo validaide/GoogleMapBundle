@@ -39,11 +39,8 @@
     },
     "repositories": [
         {
-            "type": "path",
-            "url": "../google-map",
-            "options": {
-                "symlink": true
-            }
+            "type": "vcs",
+            "url": "https://github.com/validaide/google-map.git"
         }
     ],
     "autoload": {
