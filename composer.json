@@ -1,7 +1,7 @@
 {
     "name": "validaide/googlemapbundle",
     "type": "symfony-bundle",
-    "description": "Provides a google map integration for your Symfony2 Project.",
+    "description": "Symfony Bundle for Google Map API v3 integration - PHP >= 7.0 Symfony = 3.4",
     "keywords": [
         "google",
         "map",
@@ -21,7 +21,7 @@
     "require": {
         "php": "^7.0",
         "symfony/framework-bundle": "3.4.*",
-        "validaide/google-map": "dev-development"
+        "validaide/google-map": "3.0.*"
     },
     "require-dev": {
         "egeloen/serializer-bundle": "^1.0",

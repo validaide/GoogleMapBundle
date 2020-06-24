@@ -11,7 +11,8 @@
             id="ivory.google_map.serializer.loader"
             class="Ivory\Serializer\Mapping\Loader\DirectoryClassMetadataLoader"
         >
-            <argument>%kernel.root_dir%/../vendor/egeloen/google-map/src/Service/Serializer</argument>
+            <!-- FIXME: This is a rather... peculiar... solution?  -->
+            <argument>%kernel.root_dir%/../vendor/validaide/google-map/src/Service/Serializer</argument>
             <tag name="ivory.serializer.loader" />
         </service>
     </services>
