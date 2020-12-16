@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab9607fd8433dd5eedc5f3440cc6641a",
+    "content-hash": "d7d4eceb41046566863f719df2537845",
     "packages": [
         {
             "name": "egeloen/json-builder",
@@ -1993,16 +1993,16 @@
         },
         {
             "name": "validaide/google-map",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "d23e9814973ce3bce08bae578eb6ade996e38ee8"
+                "reference": "82a8407eb32395f7078d43e180b31c4b4f3aa470"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/d23e9814973ce3bce08bae578eb6ade996e38ee8",
-                "reference": "d23e9814973ce3bce08bae578eb6ade996e38ee8",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/82a8407eb32395f7078d43e180b31c4b4f3aa470",
+                "reference": "82a8407eb32395f7078d43e180b31c4b4f3aa470",
                 "shasum": ""
             },
             "require": {
@@ -2062,9 +2062,9 @@
                 "validaide"
             ],
             "support": {
-                "source": "https://github.com/validaide/google-map/tree/3.4.0"
+                "source": "https://github.com/validaide/google-map/tree/3.5.0"
             },
-            "time": "2020-11-09T14:57:59+00:00"
+            "time": "2020-12-16T14:03:35+00:00"
         }
     ],
     "packages-dev": [

@@ -21,7 +21,7 @@
     "require": {
         "php": "^7.0",
         "symfony/framework-bundle": "3.4.*",
-        "validaide/google-map": "3.4.*"
+        "validaide/google-map": "3.5.*"
     },
     "require-dev": {
         "egeloen/serializer-bundle": "^1.0",
