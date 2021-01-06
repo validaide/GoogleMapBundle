@@ -10,7 +10,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@1.7.2
         with:
-          php-version: '7.2'
+          php-version: '7.4'
           tools: composer:1.9.3
 
       - name: Update composer to version 1.9.3
