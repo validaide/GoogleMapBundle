@@ -5,7 +5,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "7.2.13"
+            "php": "7.4.13"
         }
     },
     "keywords": [
@@ -25,7 +25,7 @@
         }
     ],
     "require": {
-        "php": "^7.0",
+        "php": "^7.4",
         "symfony/framework-bundle": "3.4.*",
         "validaide/google-map": "dev-development"
     },
