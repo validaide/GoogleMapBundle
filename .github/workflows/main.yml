@@ -16,7 +16,7 @@ jobs:
           COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install PHP Dependencies (composer)
-        run: composer install --optimize-autoloader --prefer-dist --no-suggest --no-scripts
+        run: composer install --optimize-autoloader --no-suggest --no-scripts
         env:
           SYMFONY_ENV: test
 
