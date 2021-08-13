@@ -57,8 +57,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Ivory\\GoogleMap\\Tests\\": "vendor/validaide/google-map/tests",
-            "Ivory\\GoogleMapBundle\\Tests\\": "Tests"
+            "Ivory\\Tests\\GoogleMap\\": "vendor/validaide/google-map/tests",
+            "Ivory\\GoogleMapBundle\\Tests\\": "Tests/"
         }
     },
     "extra": {
