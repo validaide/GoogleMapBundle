@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c31b7ddb4c27b88de9e7aa83c49e70e",
+    "content-hash": "0684f9790b7ba979db77dc73bfc10e41",
     "packages": [
         {
             "name": "egeloen/json-builder",
@@ -2308,16 +2308,16 @@
         },
         {
             "name": "validaide/google-map",
-            "version": "4.2.0",
+            "version": "dev-chore/webpack-encore",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "99a7b8329f74b67e9f402b5c4a5e8d6e39195308"
+                "reference": "3f84bbc3a10033bc98fe3926bfd358c606e6158d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/99a7b8329f74b67e9f402b5c4a5e8d6e39195308",
-                "reference": "99a7b8329f74b67e9f402b5c4a5e8d6e39195308",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/3f84bbc3a10033bc98fe3926bfd358c606e6158d",
+                "reference": "3f84bbc3a10033bc98fe3926bfd358c606e6158d",
                 "shasum": ""
             },
             "require": {
@@ -2377,9 +2377,9 @@
                 "validaide"
             ],
             "support": {
-                "source": "https://github.com/validaide/google-map/tree/4.2.0"
+                "source": "https://github.com/validaide/google-map/tree/chore/webpack-encore"
             },
-            "time": "2021-08-04T10:03:47+00:00"
+            "time": "2021-08-18T12:11:44+00:00"
         }
     ],
     "packages-dev": [
@@ -6378,7 +6378,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "validaide/google-map": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
