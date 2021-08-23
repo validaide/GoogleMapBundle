@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0684f9790b7ba979db77dc73bfc10e41",
+    "content-hash": "bc8c15aad3068a0ee5548323e73d5a91",
     "packages": [
         {
             "name": "egeloen/json-builder",
@@ -2308,16 +2308,16 @@
         },
         {
             "name": "validaide/google-map",
-            "version": "dev-chore/webpack-encore",
+            "version": "dev-development",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "3f84bbc3a10033bc98fe3926bfd358c606e6158d"
+                "reference": "63091d179f70e2acf1df5ce6b634d29373a445af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/3f84bbc3a10033bc98fe3926bfd358c606e6158d",
-                "reference": "3f84bbc3a10033bc98fe3926bfd358c606e6158d",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/63091d179f70e2acf1df5ce6b634d29373a445af",
+                "reference": "63091d179f70e2acf1df5ce6b634d29373a445af",
                 "shasum": ""
             },
             "require": {
@@ -2377,9 +2377,9 @@
                 "validaide"
             ],
             "support": {
-                "source": "https://github.com/validaide/google-map/tree/chore/webpack-encore"
+                "source": "https://github.com/validaide/google-map/tree/development"
             },
-            "time": "2021-08-18T12:11:44+00:00"
+            "time": "2021-08-23T11:01:24+00:00"
         }
     ],
     "packages-dev": [
