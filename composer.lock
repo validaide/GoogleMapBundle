@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc8c15aad3068a0ee5548323e73d5a91",
+    "content-hash": "9ab1b953619a93e64b8e40477408e143",
     "packages": [
         {
             "name": "egeloen/json-builder",
@@ -2308,16 +2308,16 @@
         },
         {
             "name": "validaide/google-map",
-            "version": "dev-development",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "63091d179f70e2acf1df5ce6b634d29373a445af"
+                "reference": "38a8502efa89f71195ad65981312505e62a6279c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/63091d179f70e2acf1df5ce6b634d29373a445af",
-                "reference": "63091d179f70e2acf1df5ce6b634d29373a445af",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/38a8502efa89f71195ad65981312505e62a6279c",
+                "reference": "38a8502efa89f71195ad65981312505e62a6279c",
                 "shasum": ""
             },
             "require": {
@@ -2377,9 +2377,9 @@
                 "validaide"
             ],
             "support": {
-                "source": "https://github.com/validaide/google-map/tree/development"
+                "source": "https://github.com/validaide/google-map/tree/4.3.0"
             },
-            "time": "2021-08-23T11:01:24+00:00"
+            "time": "2021-08-31T14:51:38+00:00"
         }
     ],
     "packages-dev": [
@@ -6378,9 +6378,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "validaide/google-map": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
@@ -6390,5 +6388,5 @@
     "platform-overrides": {
         "php": "7.4.13"
     },
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
