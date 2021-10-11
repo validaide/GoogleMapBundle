@@ -47,11 +47,13 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/validaide/common.git"
+            "url": "https://github.com/validaide/common.git",
+            "no-api": true
         },
         {
             "type": "vcs",
-            "url": "https://github.com/validaide/google-map.git"
+            "url": "https://github.com/validaide/google-map.git",
+            "no-api": true
         }
     ],
     "autoload": {
