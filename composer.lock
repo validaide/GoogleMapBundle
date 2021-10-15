@@ -3820,12 +3820,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "57a7f029ba60df2c1f03889176c0dbee1368b216"
+                "reference": "c102ce6374c0ab3410a46b7481b188ef0fc3e532"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/57a7f029ba60df2c1f03889176c0dbee1368b216",
-                "reference": "57a7f029ba60df2c1f03889176c0dbee1368b216",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/c102ce6374c0ab3410a46b7481b188ef0fc3e532",
+                "reference": "c102ce6374c0ab3410a46b7481b188ef0fc3e532",
                 "shasum": ""
             },
             "require": {
@@ -3842,7 +3842,7 @@
                 "php-http/guzzle6-adapter": "^1.0",
                 "phpunit/phpunit": "7.*",
                 "phpunit/phpunit-selenium": "7.*",
-                "rector/rector": "^0.11.47",
+                "rector/rector": "^0.11",
                 "symfony/cache": "^3.4",
                 "symfony/phpunit-bridge": "^3.4"
             },
@@ -3885,7 +3885,7 @@
                 "map",
                 "validaide"
             ],
-            "time": "2021-10-15T15:01:02+00:00"
+            "time": "2021-10-15T15:23:35+00:00"
         }
     ],
     "packages-dev": [
