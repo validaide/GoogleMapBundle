@@ -26,8 +26,9 @@
     ],
     "require": {
         "php": "^7.4",
-        "symfony/framework-bundle": "3.4.*",
-        "validaide/google-map": "4.3.*"
+        "symfony/framework-bundle": "^3.4",
+        "validaide/common": "4.4.*",
+        "validaide/google-map": "4.4.*"
     },
     "require-dev": {
         "egeloen/serializer-bundle": "^1.0",
@@ -36,17 +37,23 @@
         "php-http/guzzle6-adapter": "^1.0",
         "phpunit/phpunit": "^7.0",
         "phpunit/phpunit-selenium": "7.*",
-        "symfony/cache": "3.4.*",
-        "symfony/form": "3.4.*",
-        "symfony/phpunit-bridge": "3.4.*",
-        "symfony/templating": "3.4.*",
-        "symfony/yaml": "3.4.*",
+        "symfony/cache": "^3.4",
+        "symfony/form": "^3.4",
+        "symfony/phpunit-bridge": "^3.4",
+        "symfony/templating": "^3.4",
+        "symfony/yaml": "^3.4",
         "twig/twig": "^1.18"
     },
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/validaide/google-map.git"
+            "url": "https://github.com/validaide/common.git",
+            "no-api": true
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/validaide/google-map.git",
+            "no-api": true
         }
     ],
     "autoload": {
