@@ -11,6 +11,7 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Form\Type;
 
+use PHPUnit\Framework\MockObject\MockObject;
 use Ivory\GoogleMap\Base\Bound;
 use Ivory\GoogleMap\Place\Autocomplete;
 use Ivory\GoogleMap\Place\AutocompleteComponentType;
@@ -35,7 +36,7 @@ class PlaceAutocompleteTypeTest extends TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->factory = Forms::createFormFactoryBuilder()
             ->addType(new PlaceAutocompleteType())
@@ -142,7 +143,7 @@ class PlaceAutocompleteTypeTest extends TestCase
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|Bound
+     * @return MockObject|Bound
      */
     private function createBoundMock()
     {
