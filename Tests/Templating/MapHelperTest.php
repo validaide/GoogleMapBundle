@@ -32,9 +32,6 @@ class MapHelperTest extends TestCase
      */
     private $innerMapHelper;
 
-    /**
-     * {@inheritdoc}
-     */
     protected function setUp(): void
     {
         $this->innerMapHelper = $this->createMapHelperMock();

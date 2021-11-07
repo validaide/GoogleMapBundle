@@ -21,9 +21,6 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Overlay\InfoWindowFunctionalTest as 
  */
 class InfoWindowFunctionalTest extends BaseInfoWindowFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();

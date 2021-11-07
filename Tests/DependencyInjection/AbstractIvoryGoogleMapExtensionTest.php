@@ -72,9 +72,6 @@ abstract class AbstractIvoryGoogleMapExtensionTest extends TestCase
      */
     private $serializer;
 
-    /**
-     * {@inheritdoc}
-     */
     protected function setUp(): void
     {
         $this->container = new ContainerBuilder();

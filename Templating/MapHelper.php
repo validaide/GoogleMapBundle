@@ -79,9 +79,6 @@ class MapHelper extends Helper
         return $this->mapHelper->renderJavascript($map);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getName()
     {
         return 'ivory_google_map';

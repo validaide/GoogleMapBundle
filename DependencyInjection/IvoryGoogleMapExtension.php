@@ -26,9 +26,6 @@ use Symfony\Component\Serializer\SerializerInterface;
  */
 class IvoryGoogleMapExtension extends ConfigurableExtension
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function loadInternal(array $config, ContainerBuilder $container)
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));

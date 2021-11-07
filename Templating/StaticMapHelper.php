@@ -43,9 +43,6 @@ class StaticMapHelper extends Helper
         return $this->staticMapHelper->render($map);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getName()
     {
         return 'ivory_google_map_static';

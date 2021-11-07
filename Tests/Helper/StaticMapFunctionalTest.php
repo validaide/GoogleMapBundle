@@ -20,9 +20,6 @@ use Ivory\Tests\GoogleMap\Helper\Functional\StaticMapFunctionalTest as BaseStati
  */
 class StaticMapFunctionalTest extends BaseStaticMapFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createStaticMapHelper()
     {
         return HelperFactory::createStaticMapHelper();

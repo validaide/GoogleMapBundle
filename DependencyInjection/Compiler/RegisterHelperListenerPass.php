@@ -38,9 +38,6 @@ class RegisterHelperListenerPass implements CompilerPassInterface
      */
     private $passes = [];
 
-    /**
-     * {@inheritdoc}
-     */
     public function __construct()
     {
         foreach (self::$helpers as $helper) {

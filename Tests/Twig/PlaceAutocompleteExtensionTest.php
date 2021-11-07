@@ -15,6 +15,7 @@ use PHPUnit\Framework\MockObject\MockObject;
 use Ivory\GoogleMap\Helper\PlaceAutocompleteHelper;
 use Ivory\GoogleMap\Place\Autocomplete;
 use Ivory\GoogleMapBundle\Twig\PlaceAutocompleteExtension;
+use Twig\Extension\AbstractExtension;
 
 /**
  * @author GeLo <geloen.eric@gmail.com>
@@ -26,10 +27,7 @@ class PlaceAutocompleteExtensionTest extends AbstractExtensionTest
      */
     private $placeAutocompleteHelper;
 
-    /**
-     * {@inheritdoc}
-     */
-    protected function createExtension()
+    protected function createExtension(): AbstractExtension
     {
         $this->placeAutocompleteHelper = $this->createPlaceAutocompleteHelperMock();
 

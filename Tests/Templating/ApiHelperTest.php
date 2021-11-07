@@ -32,9 +32,6 @@ class ApiHelperTest extends TestCase
      */
     private $innerApiHelper;
 
-    /**
-     * {@inheritdoc}
-     */
     protected function setUp(): void
     {
         $this->innerApiHelper = $this->createApiHelperMock();
