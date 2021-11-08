@@ -25,10 +25,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  */
 class HelperFactory
 {
-    /**
-     * @var ContainerInterface
-     */
-    private static $container;
+    private static ?ContainerBuilder $container = null;
 
     /**
      * @return ApiHelper

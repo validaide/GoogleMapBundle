@@ -11,6 +11,8 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Twig;
 
+use PHPUnit\Framework\MockObject\MockObject;
+use stdClass;
 use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\GoogleMapBundle\Twig\ApiExtension;
 
@@ -20,7 +22,7 @@ use Ivory\GoogleMapBundle\Twig\ApiExtension;
 class ApiExtensionTest extends AbstractExtensionTest
 {
     /**
-     * @var ApiHelper|\PHPUnit_Framework_MockObject_MockObject
+     * @var ApiHelper|MockObject
      */
     private $apiHelper;
 
@@ -41,14 +43,14 @@ class ApiExtensionTest extends AbstractExtensionTest
         $this->apiHelper
             ->expects($this->once())
             ->method('render')
-            ->with($this->identicalTo([$object = new \stdClass()]))
+            ->with($this->identicalTo([$object = new stdClass()]))
             ->will($this->returnValue($result = 'result'));
 
         $this->assertSame($result, $template->render(['object' => $object]));
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|ApiHelper
+     * @return MockObject|ApiHelper
      */
     private function createApiHelperMock()
     {

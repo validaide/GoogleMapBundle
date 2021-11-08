@@ -11,6 +11,7 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Twig;
 
+use PHPUnit\Framework\MockObject\MockObject;
 use Ivory\GoogleMap\Helper\MapHelper;
 use Ivory\GoogleMap\Map;
 use Ivory\GoogleMapBundle\Twig\MapExtension;
@@ -21,7 +22,7 @@ use Ivory\GoogleMapBundle\Twig\MapExtension;
 class MapExtensionTest extends AbstractExtensionTest
 {
     /**
-     * @var MapHelper|\PHPUnit_Framework_MockObject_MockObject
+     * @var MapHelper|MockObject
      */
     private $mapHelper;
 
@@ -88,7 +89,7 @@ class MapExtensionTest extends AbstractExtensionTest
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|MapHelper
+     * @return MockObject|MapHelper
      */
     private function createMapHelperMock()
     {
@@ -96,7 +97,7 @@ class MapExtensionTest extends AbstractExtensionTest
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|Map
+     * @return MockObject|Map
      */
     private function createMapMock()
     {
