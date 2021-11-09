@@ -11,6 +11,7 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Helper;
 
+use Ivory\GoogleMap\Helper\StaticMapHelper;
 use Ivory\Tests\GoogleMap\Helper\Functional\StaticMapFunctionalTest as BaseStaticMapFunctionalTest;
 
 /**
@@ -20,7 +21,7 @@ use Ivory\Tests\GoogleMap\Helper\Functional\StaticMapFunctionalTest as BaseStati
  */
 class StaticMapFunctionalTest extends BaseStaticMapFunctionalTest
 {
-    protected function createStaticMapHelper()
+    protected function createStaticMapHelper(): StaticMapHelper
     {
         return HelperFactory::createStaticMapHelper();
     }
