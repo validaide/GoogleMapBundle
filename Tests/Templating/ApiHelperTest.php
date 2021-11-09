@@ -11,6 +11,8 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Templating;
 
+use PHPUnit\Framework\MockObject\MockObject;
+use stdClass;
 use Ivory\GoogleMap\Helper\ApiHelper as BaseApiHelper;
 use Ivory\GoogleMapBundle\Templating\ApiHelper;
 use PHPUnit\Framework\TestCase;
@@ -20,20 +22,17 @@ use PHPUnit\Framework\TestCase;
  */
 class ApiHelperTest extends TestCase
 {
-    /**
-     * @var ApiHelper
-     */
-    private $apiHelper;
+    private \Ivory\GoogleMapBundle\Templating\ApiHelper $apiHelper;
 
     /**
-     * @var BaseApiHelper|\PHPUnit_Framework_MockObject_MockObject
+     * @var BaseApiHelper|MockObject
      */
     private $innerApiHelper;
 
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->innerApiHelper = $this->createApiHelperMock();
         $this->apiHelper = new ApiHelper($this->innerApiHelper);
@@ -44,7 +43,7 @@ class ApiHelperTest extends TestCase
         $this->innerApiHelper
             ->expects($this->once())
             ->method('render')
-            ->with($this->identicalTo($objects = [new \stdClass()]))
+            ->with($this->identicalTo($objects = [new stdClass()]))
             ->will($this->returnValue($result = 'result'));
 
         $this->assertSame($result, $this->apiHelper->render($objects));
@@ -56,7 +55,7 @@ class ApiHelperTest extends TestCase
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|BaseApiHelper
+     * @return MockObject|BaseApiHelper
      */
     private function createApiHelperMock()
     {

@@ -19,6 +19,7 @@ use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
+use Symfony\Component\Serializer\SerializerInterface;
 
 /**
  * @author GeLo <geloen.eric@gmail.com>
@@ -147,7 +148,7 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
             $definition
                 ->addArgument(new Reference($config['client']))
                 ->addArgument(new Reference($config['message_factory']))
-                ->addArgument(new Reference('ivory.serializer'));
+                ->addArgument(new Reference(SerializerInterface::class));
         }
 
         if ($http && isset($config['format'])) {

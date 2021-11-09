@@ -11,6 +11,7 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Templating;
 
+use PHPUnit\Framework\MockObject\MockObject;
 use Ivory\GoogleMap\Helper\MapHelper as BaseMapHelper;
 use Ivory\GoogleMap\Map;
 use Ivory\GoogleMapBundle\Templating\MapHelper;
@@ -21,20 +22,17 @@ use PHPUnit\Framework\TestCase;
  */
 class MapHelperTest extends TestCase
 {
-    /**
-     * @var MapHelper
-     */
-    private $mapHelper;
+    private \Ivory\GoogleMapBundle\Templating\MapHelper $mapHelper;
 
     /**
-     * @var BaseMapHelper|\PHPUnit_Framework_MockObject_MockObject
+     * @var BaseMapHelper|MockObject
      */
     private $innerMapHelper;
 
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->innerMapHelper = $this->createMapHelperMock();
         $this->mapHelper = new MapHelper($this->innerMapHelper);
@@ -90,7 +88,7 @@ class MapHelperTest extends TestCase
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|BaseMapHelper
+     * @return MockObject|BaseMapHelper
      */
     private function createMapHelperMock()
     {
@@ -98,7 +96,7 @@ class MapHelperTest extends TestCase
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|Map
+     * @return MockObject|Map
      */
     private function createMapMock()
     {

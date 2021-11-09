@@ -11,6 +11,7 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Twig;
 
+use PHPUnit\Framework\MockObject\MockObject;
 use Ivory\GoogleMap\Helper\PlaceAutocompleteHelper;
 use Ivory\GoogleMap\Place\Autocomplete;
 use Ivory\GoogleMapBundle\Twig\PlaceAutocompleteExtension;
@@ -21,7 +22,7 @@ use Ivory\GoogleMapBundle\Twig\PlaceAutocompleteExtension;
 class PlaceAutocompleteExtensionTest extends AbstractExtensionTest
 {
     /**
-     * @var PlaceAutocompleteHelper|\PHPUnit_Framework_MockObject_MockObject
+     * @var PlaceAutocompleteHelper|MockObject
      */
     private $placeAutocompleteHelper;
 
@@ -75,7 +76,7 @@ class PlaceAutocompleteExtensionTest extends AbstractExtensionTest
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|PlaceAutocompleteHelper
+     * @return MockObject|PlaceAutocompleteHelper
      */
     private function createPlaceAutocompleteHelperMock()
     {
@@ -83,7 +84,7 @@ class PlaceAutocompleteExtensionTest extends AbstractExtensionTest
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|Autocomplete
+     * @return MockObject|Autocomplete
      */
     private function createAutocompleteMock()
     {
