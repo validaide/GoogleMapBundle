@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7315c1da8dfb5a72088fedb7d156f59e",
+    "content-hash": "496ee18ccc95010523dc4a778eb9ad6e",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -3814,16 +3814,16 @@
         },
         {
             "name": "validaide/google-map",
-            "version": "dev-feature/symfony-serializer",
+            "version": "dev-development",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "5a7a12d39850b010688a6dd293be47b6aeb32869"
+                "reference": "9a75e57cc9a2234283ce9a513ea1d3e36031debb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/5a7a12d39850b010688a6dd293be47b6aeb32869",
-                "reference": "5a7a12d39850b010688a6dd293be47b6aeb32869",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/9a75e57cc9a2234283ce9a513ea1d3e36031debb",
+                "reference": "9a75e57cc9a2234283ce9a513ea1d3e36031debb",
                 "shasum": ""
             },
             "require": {
@@ -3883,7 +3883,7 @@
                 "map",
                 "validaide"
             ],
-            "time": "2021-11-08T16:37:39+00:00"
+            "time": "2021-11-09T14:08:22+00:00"
         }
     ],
     "packages-dev": [
@@ -7477,7 +7477,7 @@
         },
         {
             "package": "validaide/google-map",
-            "version": "dev-feature/symfony-serializer",
+            "version": "dev-development",
             "alias": "4.5.0",
             "alias_normalized": "4.5.0.0"
         }
