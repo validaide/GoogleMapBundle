@@ -4087,12 +4087,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "9ad67b548f4607e13476fc5ad2b8e12725b76de1"
+                "reference": "d1272e7770399d81a3f9980487903e64105ad9e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/9ad67b548f4607e13476fc5ad2b8e12725b76de1",
-                "reference": "9ad67b548f4607e13476fc5ad2b8e12725b76de1",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/d1272e7770399d81a3f9980487903e64105ad9e4",
+                "reference": "d1272e7770399d81a3f9980487903e64105ad9e4",
                 "shasum": ""
             },
             "require": {
@@ -4101,7 +4101,7 @@
                 "symfony/event-dispatcher": "^4.4",
                 "symfony/property-access": "^4.4",
                 "symfony/serializer": "^4.4",
-                "validaide/common": "dev-chore/symfony-4"
+                "validaide/common": "dev-chore/symfony-4 as 4.5.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.0",
@@ -4152,7 +4152,7 @@
                 "map",
                 "validaide"
             ],
-            "time": "2021-10-25T16:23:57+00:00"
+            "time": "2021-11-09T14:44:22+00:00"
         }
     ],
     "packages-dev": [

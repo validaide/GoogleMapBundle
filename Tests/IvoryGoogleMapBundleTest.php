@@ -20,10 +20,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class IvoryGoogleMapBundleTest extends TestCase
 {
-    /**
-     * @var IvoryGoogleMapBundle
-     */
-    private $bundle;
+    private IvoryGoogleMapBundle $bundle;
 
     protected function setUp(): void
     {

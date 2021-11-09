@@ -42,15 +42,9 @@ use Symfony\Component\Serializer\SerializerInterface;
  */
 abstract class AbstractIvoryGoogleMapExtensionTest extends TestCase
 {
-    /**
-     * @var ContainerBuilder
-     */
-    private $container;
+    private ContainerBuilder $container;
 
-    /**
-     * @var bool
-     */
-    private $debug;
+    private ?bool $debug = null;
 
     /**
      * @var string
@@ -87,7 +81,6 @@ abstract class AbstractIvoryGoogleMapExtensionTest extends TestCase
     }
 
     /**
-     * @param ContainerBuilder $container
      * @param string           $configuration
      */
     abstract protected function loadConfiguration(ContainerBuilder $container, $configuration);
@@ -166,7 +159,7 @@ abstract class AbstractIvoryGoogleMapExtensionTest extends TestCase
         $this->container->compile();
 
         $this->assertSame(
-            array_merge(['IvoryGoogleMapBundle:Form'], $resources),
+            [...['IvoryGoogleMapBundle:Form'], ...$resources],
             $this->container->getParameter($parameter)
         );
     }
@@ -177,7 +170,7 @@ abstract class AbstractIvoryGoogleMapExtensionTest extends TestCase
         $this->container->compile();
 
         $this->assertSame(
-            array_merge(['IvoryGoogleMapBundle:Form:place_autocomplete_widget.html.twig'], $resources),
+            [...['IvoryGoogleMapBundle:Form:place_autocomplete_widget.html.twig'], ...$resources],
             $this->container->getParameter($parameter)
         );
     }

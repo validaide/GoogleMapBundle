@@ -22,10 +22,7 @@ use PHPUnit\Framework\TestCase;
  */
 class PlaceAutocompleteHelperTest extends TestCase
 {
-    /**
-     * @var PlaceAutocompleteHelper
-     */
-    private $placeAutocompleteHelper;
+    private \Ivory\GoogleMapBundle\Templating\PlaceAutocompleteHelper $placeAutocompleteHelper;
 
     /**
      * @var BasePlaceAutocompleteHelper|MockObject

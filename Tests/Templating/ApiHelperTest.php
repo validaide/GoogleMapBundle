@@ -22,10 +22,7 @@ use PHPUnit\Framework\TestCase;
  */
 class ApiHelperTest extends TestCase
 {
-    /**
-     * @var ApiHelper
-     */
-    private $apiHelper;
+    private \Ivory\GoogleMapBundle\Templating\ApiHelper $apiHelper;
 
     /**
      * @var BaseApiHelper|MockObject
