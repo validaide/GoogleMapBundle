@@ -26,10 +26,10 @@
     ],
     "require": {
         "php": "^7.4",
-        "symfony/serializer": "^3.4",
         "symfony/framework-bundle": "^3.4",
-        "validaide/common": "dev-development as 4.5.0",
-        "validaide/google-map": "dev-development as 4.5.0"
+        "symfony/serializer": "^3.4",
+        "validaide/common": "4.6.*",
+        "validaide/google-map": "4.6.*"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.0",
