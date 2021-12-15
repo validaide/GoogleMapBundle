@@ -27,16 +27,17 @@
     "require": {
         "php": "^7.4",
         "symfony/framework-bundle": "^3.4",
-        "validaide/common": "4.5.*",
-        "validaide/google-map": "4.5.*"
+        "symfony/serializer": "^3.4",
+        "validaide/common": "4.6.*",
+        "validaide/google-map": "4.6.*"
     },
     "require-dev": {
-        "egeloen/serializer-bundle": "^1.0",
         "friendsofphp/php-cs-fixer": "^2.0",
         "php-http/cache-plugin": "^1.4",
         "php-http/guzzle6-adapter": "^1.0",
-        "phpunit/phpunit": "^7.0",
-        "phpunit/phpunit-selenium": "7.*",
+        "rector/rector": "^0.11",
+        "phpunit/phpunit": "^8.0",
+        "phpunit/phpunit-selenium": "^8.0",
         "symfony/cache": "^3.4",
         "symfony/form": "^3.4",
         "symfony/phpunit-bridge": "^3.4",
@@ -63,7 +64,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Ivory\\Tests\\GoogleMap\\": "vendor/validaide/google-map/tests"
+            "Ivory\\Tests\\GoogleMap\\": "vendor/validaide/google-map/tests",
+            "Ivory\\GoogleMapBundle\\Tests\\": "Tests/"
         }
     },
     "extra": {

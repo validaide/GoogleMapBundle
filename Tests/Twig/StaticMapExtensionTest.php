@@ -11,6 +11,7 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Twig;
 
+use PHPUnit\Framework\MockObject\MockObject;
 use Ivory\GoogleMap\Helper\StaticMapHelper;
 use Ivory\GoogleMap\Map;
 use Ivory\GoogleMapBundle\Twig\StaticMapExtension;
@@ -21,7 +22,7 @@ use Ivory\GoogleMapBundle\Twig\StaticMapExtension;
 class StaticMapExtensionTest extends AbstractExtensionTest
 {
     /**
-     * @var StaticMapHelper|\PHPUnit_Framework_MockObject_MockObject
+     * @var StaticMapHelper|MockObject
      */
     private $staticMapHelper;
 
@@ -49,7 +50,7 @@ class StaticMapExtensionTest extends AbstractExtensionTest
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|StaticMapHelper
+     * @return MockObject|StaticMapHelper
      */
     private function createStaticMapHelperMock()
     {
@@ -57,7 +58,7 @@ class StaticMapExtensionTest extends AbstractExtensionTest
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|Map
+     * @return MockObject|Map
      */
     private function createMapMock()
     {
