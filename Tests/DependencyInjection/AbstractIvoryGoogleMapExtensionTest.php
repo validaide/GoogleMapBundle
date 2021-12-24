@@ -170,7 +170,7 @@ abstract class AbstractIvoryGoogleMapExtensionTest extends TestCase
         $this->container->compile();
 
         $this->assertSame(
-            [...['IvoryGoogleMapBundle:Form:place_autocomplete_widget.html.twig'], ...$resources],
+            [...['@IvoryGoogleMap/Form/place_autocomplete_widget.html.twig'], ...$resources],
             $this->container->getParameter($parameter)
         );
     }
