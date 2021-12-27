@@ -83,7 +83,7 @@ class Configuration implements ConfigurationInterface
      *
      * @return ArrayNodeDefinition
      */
-    private function createServiceNode($service, $http)
+    private function createServiceNode(string $service, bool $http)
     {
         $node     = $this->createNode($service);
         $children = $node
@@ -97,10 +97,10 @@ class Configuration implements ConfigurationInterface
                 ->isRequired()
                 ->cannotBeEmpty()
                 ->end()
-                ->scalarNode('message_factory')
-                ->isRequired()
-                ->cannotBeEmpty()
-                ->end()
+//                ->scalarNode('message_factory')
+//                ->isRequired()
+//                ->cannotBeEmpty()
+//                ->end()
                 ->scalarNode('format')->end();
         } else {
             $node
