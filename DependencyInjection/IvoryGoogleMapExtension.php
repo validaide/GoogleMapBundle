@@ -140,8 +140,6 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
         $definition = $container->getDefinition($serviceName = 'ivory.google_map.'.$service);
 
         if ($http) {
-            $loader->load('service/serializer.xml');
-
             $definition
                 ->addArgument(new Reference($config['client']))
 //                ->addArgument(new Reference($config['message_factory']))

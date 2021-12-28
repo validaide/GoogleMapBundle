@@ -4097,12 +4097,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "d2b0b14ae8098ece165524a359bde5c73ceffaa5"
+                "reference": "6ccc5e218c45e711bd676fcc45ad1a20bae3e162"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/d2b0b14ae8098ece165524a359bde5c73ceffaa5",
-                "reference": "d2b0b14ae8098ece165524a359bde5c73ceffaa5",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/6ccc5e218c45e711bd676fcc45ad1a20bae3e162",
+                "reference": "6ccc5e218c45e711bd676fcc45ad1a20bae3e162",
                 "shasum": ""
             },
             "require": {
@@ -4162,7 +4162,7 @@
                 "map",
                 "validaide"
             ],
-            "time": "2021-12-24T18:32:27+00:00"
+            "time": "2021-12-28T15:41:34+00:00"
         }
     ],
     "packages-dev": [
