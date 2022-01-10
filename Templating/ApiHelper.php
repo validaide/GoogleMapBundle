@@ -42,9 +42,6 @@ class ApiHelper extends Helper
         return $this->apiHelper->render($objects);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getName()
     {
         return 'ivory_google_api';

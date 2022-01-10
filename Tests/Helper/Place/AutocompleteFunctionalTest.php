@@ -21,17 +21,11 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Place\AutocompleteFunctionalTest as 
  */
 class AutocompleteFunctionalTest extends BaseAutocompleteFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createPlaceAutocompleteHelper()
     {
         return HelperFactory::createPlaceAutocompleteHelper();

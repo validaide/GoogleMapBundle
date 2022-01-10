@@ -21,17 +21,11 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Overlay\GroundOverlayFunctionalTest 
  */
 class GroundOverlayFunctionalTest extends BaseGroundOverlayFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createMapHelper()
     {
         return HelperFactory::createMapHelper();

@@ -21,17 +21,11 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Control\ZoomControlFunctionalTest as
  */
 class ZoomControlFunctionalTest extends BaseZoomControlFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createMapHelper()
     {
         return HelperFactory::createMapHelper();

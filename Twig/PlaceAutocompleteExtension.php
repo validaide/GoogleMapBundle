@@ -13,34 +13,27 @@ namespace Ivory\GoogleMapBundle\Twig;
 
 use Ivory\GoogleMap\Helper\PlaceAutocompleteHelper;
 use Ivory\GoogleMap\Place\Autocomplete;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class PlaceAutocompleteExtension extends \Twig_Extension
+class PlaceAutocompleteExtension extends AbstractExtension
 {
-    /**
-     * @var PlaceAutocompleteHelper
-     */
-    private $placeAutocompleteHelper;
+    private PlaceAutocompleteHelper $placeAutocompleteHelper;
 
-    /**
-     * @param PlaceAutocompleteHelper $placeAutocompleteHelper
-     */
     public function __construct(PlaceAutocompleteHelper $placeAutocompleteHelper)
     {
         $this->placeAutocompleteHelper = $placeAutocompleteHelper;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getFunctions()
     {
         $functions = [];
 
         foreach ($this->getMapping() as $name => $method) {
-            $functions[] = new \Twig_SimpleFunction($name, [$this, $method], ['is_safe' => ['html']]);
+            $functions[] = new TwigFunction($name, [$this, $method], ['is_safe' => ['html']]);
         }
 
         return $functions;
@@ -82,9 +75,6 @@ class PlaceAutocompleteExtension extends \Twig_Extension
         return $this->placeAutocompleteHelper->renderJavascript($autocomplete);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getName()
     {
         return 'ivory_google_place_autocomplete';

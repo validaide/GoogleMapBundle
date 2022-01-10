@@ -21,17 +21,11 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Overlay\MarkerClustererFunctionalTes
  */
 class MarkerClustererFunctionalTest extends BaseMarkerClustererFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createMapHelper()
     {
         return HelperFactory::createMapHelper();

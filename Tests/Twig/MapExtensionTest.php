@@ -15,6 +15,7 @@ use PHPUnit\Framework\MockObject\MockObject;
 use Ivory\GoogleMap\Helper\MapHelper;
 use Ivory\GoogleMap\Map;
 use Ivory\GoogleMapBundle\Twig\MapExtension;
+use Twig\Extension\AbstractExtension;
 
 /**
  * @author GeLo <geloen.eric@gmail.com>
@@ -26,10 +27,7 @@ class MapExtensionTest extends AbstractExtensionTest
      */
     private $mapHelper;
 
-    /**
-     * {@inheritdoc}
-     */
-    protected function createExtension()
+    protected function createExtension(): AbstractExtension
     {
         $this->mapHelper = $this->createMapHelperMock();
 

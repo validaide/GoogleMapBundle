@@ -22,9 +22,6 @@ class IvoryGoogleMapBundleTest extends TestCase
 {
     private IvoryGoogleMapBundle $bundle;
 
-    /**
-     * {@inheritdoc}
-     */
     protected function setUp(): void
     {
         $this->bundle = new IvoryGoogleMapBundle();

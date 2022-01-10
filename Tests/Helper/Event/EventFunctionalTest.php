@@ -21,17 +21,11 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Event\EventFunctionalTest as BaseEve
  */
 class EventFunctionalTest extends BaseEventFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createMapHelper()
     {
         return HelperFactory::createMapHelper();

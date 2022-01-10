@@ -29,9 +29,6 @@ class StaticMapHelperTest extends TestCase
      */
     private $innerStaticMapHelper;
 
-    /**
-     * {@inheritdoc}
-     */
     protected function setUp(): void
     {
         $this->innerStaticMapHelper = $this->createStaticMapHelperMock();

@@ -21,17 +21,11 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Layer\KmlLayerFunctionalTest as Base
  */
 class KmlLayerFunctionalTest extends BaseKmlLayerFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createMapHelper()
     {
         return HelperFactory::createMapHelper();

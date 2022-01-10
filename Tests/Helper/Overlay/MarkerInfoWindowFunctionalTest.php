@@ -21,17 +21,11 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Overlay\MarkerInfoWindowFunctionalTe
  */
 class MarkerInfoWindowFunctionalTest extends BaseMarkerInfoWindowFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createMapHelper()
     {
         return HelperFactory::createMapHelper();

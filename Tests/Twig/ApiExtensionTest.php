@@ -15,6 +15,7 @@ use PHPUnit\Framework\MockObject\MockObject;
 use stdClass;
 use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\GoogleMapBundle\Twig\ApiExtension;
+use Twig\Extension\AbstractExtension;
 
 /**
  * @author GeLo <geloen.eric@gmail.com>
@@ -26,10 +27,7 @@ class ApiExtensionTest extends AbstractExtensionTest
      */
     private $apiHelper;
 
-    /**
-     * {@inheritdoc}
-     */
-    protected function createExtension()
+    protected function createExtension(): AbstractExtension
     {
         $this->apiHelper = $this->createApiHelperMock();
 

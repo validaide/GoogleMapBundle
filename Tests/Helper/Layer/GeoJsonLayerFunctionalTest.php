@@ -21,17 +21,11 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Layer\GeoJsonLayerFunctionalTest as 
  */
 class GeoJsonLayerFunctionalTest extends BaseGeoJsonLayerFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createMapHelper()
     {
         return HelperFactory::createMapHelper();

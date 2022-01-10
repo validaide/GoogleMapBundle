@@ -29,9 +29,6 @@ class PlaceAutocompleteHelperTest extends TestCase
      */
     private $innerPlaceAutocompleteHelper;
 
-    /**
-     * {@inheritdoc}
-     */
     protected function setUp(): void
     {
         $this->innerPlaceAutocompleteHelper = $this->createPlaceAutocompleteHelperMock();
