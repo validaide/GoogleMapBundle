@@ -20,17 +20,11 @@ use Ivory\Tests\GoogleMap\Helper\Functional\MapFunctionalTest as BaseMapFunction
  */
 class MapFunctionalTest extends BaseMapFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createMapHelper()
     {
         return HelperFactory::createMapHelper();

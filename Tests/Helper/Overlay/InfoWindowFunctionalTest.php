@@ -26,9 +26,6 @@ class InfoWindowFunctionalTest extends BaseInfoWindowFunctionalTest
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createMapHelper()
     {
         return HelperFactory::createMapHelper();

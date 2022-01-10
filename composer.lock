@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f5d7ee283d3f6df1cb998f7d2049984",
+    "content-hash": "584a22372159b509bf2975e4faa763bb",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -4039,16 +4039,16 @@
         },
         {
             "name": "validaide/common",
-            "version": "dev-chore/symfony-4",
+            "version": "dev-development",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/common.git",
-                "reference": "6c1d0e66eba96443279ae6c63a28e8e51846cf94"
+                "reference": "7b75fda86fbdfcbb60bf528d657d9d37b583bec4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/common/zipball/6c1d0e66eba96443279ae6c63a28e8e51846cf94",
-                "reference": "6c1d0e66eba96443279ae6c63a28e8e51846cf94",
+                "url": "https://api.github.com/repos/validaide/common/zipball/7b75fda86fbdfcbb60bf528d657d9d37b583bec4",
+                "reference": "7b75fda86fbdfcbb60bf528d657d9d37b583bec4",
                 "shasum": ""
             },
             "require": {
@@ -4065,7 +4065,7 @@
             "require-dev": {
                 "brianium/paratest": "^4.0",
                 "phpunit/phpunit": "^9.1",
-                "rector/rector": "^0.11.60",
+                "rector/rector": "^0.12",
                 "symplify/easy-coding-standard": "^9.4"
             },
             "type": "library",
@@ -4089,20 +4089,20 @@
                 }
             ],
             "description": "Common Library for Validaide projects",
-            "time": "2021-12-24T16:13:00+00:00"
+            "time": "2022-01-10T11:37:47+00:00"
         },
         {
             "name": "validaide/google-map",
-            "version": "dev-chore/symfony-4",
+            "version": "dev-development",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "6ccc5e218c45e711bd676fcc45ad1a20bae3e162"
+                "reference": "ebafdd4badf6056f3c55a68ccf94ed865a5ac678"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/6ccc5e218c45e711bd676fcc45ad1a20bae3e162",
-                "reference": "6ccc5e218c45e711bd676fcc45ad1a20bae3e162",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/ebafdd4badf6056f3c55a68ccf94ed865a5ac678",
+                "reference": "ebafdd4badf6056f3c55a68ccf94ed865a5ac678",
                 "shasum": ""
             },
             "require": {
@@ -4111,7 +4111,7 @@
                 "symfony/event-dispatcher": "^4.4",
                 "symfony/property-access": "^4.4",
                 "symfony/serializer": "^4.4",
-                "validaide/common": "dev-chore/symfony-4 as 4.6.0"
+                "validaide/common": "dev-development as 4.6.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.0",
@@ -4119,7 +4119,7 @@
                 "php-http/guzzle6-adapter": "^1.0",
                 "phpunit/phpunit": "8.*",
                 "phpunit/phpunit-selenium": "8.*",
-                "rector/rector": "^0.11",
+                "rector/rector": "^0.12",
                 "symfony/cache": "^4.4",
                 "symfony/phpunit-bridge": "^4.4"
             },
@@ -4162,7 +4162,7 @@
                 "map",
                 "validaide"
             ],
-            "time": "2021-12-28T15:41:34+00:00"
+            "time": "2022-01-10T11:52:55+00:00"
         }
     ],
     "packages-dev": [
@@ -5710,16 +5710,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.99",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "b4d40f1d759942f523be267a1bab6884f46ca3f7"
+                "reference": "151a51f6149855785fbd883e79768c0abc96b75f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b4d40f1d759942f523be267a1bab6884f46ca3f7",
-                "reference": "b4d40f1d759942f523be267a1bab6884f46ca3f7",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/151a51f6149855785fbd883e79768c0abc96b75f",
+                "reference": "151a51f6149855785fbd883e79768c0abc96b75f",
                 "shasum": ""
             },
             "require": {
@@ -5735,7 +5735,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.12-dev"
+                    "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
@@ -5750,7 +5750,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.99"
+                "source": "https://github.com/phpstan/phpstan/tree/1.3.3"
             },
             "funding": [
                 {
@@ -5770,7 +5770,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-12T20:09:55+00:00"
+            "time": "2022-01-07T09:49:03+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -6343,25 +6343,24 @@
         },
         {
             "name": "rector/rector",
-            "version": "0.11.60",
+            "version": "0.12.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "428f593818f8c50fe12c543e8c0a107f9bd899ae"
+                "reference": "efcc6f135a76bfd031c31fc182ce7a6fd02b3ce5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/428f593818f8c50fe12c543e8c0a107f9bd899ae",
-                "reference": "428f593818f8c50fe12c543e8c0a107f9bd899ae",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/efcc6f135a76bfd031c31fc182ce7a6fd02b3ce5",
+                "reference": "efcc6f135a76bfd031c31fc182ce7a6fd02b3ce5",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1|^8.0",
-                "phpstan/phpstan": "0.12.99"
+                "phpstan/phpstan": "^1.3"
             },
             "conflict": {
-                "phpstan/phpdoc-parser": "<=0.5.3",
-                "phpstan/phpstan": "<=0.12.82",
+                "phpstan/phpdoc-parser": "<1.2",
                 "rector/rector-cakephp": "*",
                 "rector/rector-doctrine": "*",
                 "rector/rector-laravel": "*",
@@ -6377,7 +6376,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "0.11-dev"
+                    "dev-main": "0.12-dev"
                 }
             },
             "autoload": {
@@ -6392,7 +6391,7 @@
             "description": "Prefixed and PHP 7.1 downgraded version of rector/rector",
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/0.11.60"
+                "source": "https://github.com/rectorphp/rector/tree/0.12.12"
             },
             "funding": [
                 {
@@ -6400,7 +6399,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-10-20T13:08:22+00:00"
+            "time": "2022-01-07T16:49:17+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -7986,13 +7985,13 @@
     "aliases": [
         {
             "package": "validaide/common",
-            "version": "dev-chore/symfony-4",
+            "version": "dev-development",
             "alias": "4.6.0",
             "alias_normalized": "4.6.0.0"
         },
         {
             "package": "validaide/google-map",
-            "version": "dev-chore/symfony-4",
+            "version": "dev-development",
             "alias": "4.6.0",
             "alias_normalized": "4.6.0.0"
         }
