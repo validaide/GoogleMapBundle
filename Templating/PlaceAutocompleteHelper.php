@@ -69,9 +69,6 @@ class PlaceAutocompleteHelper extends Helper
         return $this->placeAutocompleteHelper->renderJavascript($autocomplete);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getName()
     {
         return 'ivory_google_place_autocomplete';

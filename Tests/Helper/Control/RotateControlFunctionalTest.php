@@ -21,17 +21,11 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Control\RotateControlFunctionalTest 
  */
 class RotateControlFunctionalTest extends BaseRotateControlFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createMapHelper()
     {
         return HelperFactory::createMapHelper();

@@ -8,5 +8,4 @@
 ivory_google_map:
     direction:
         client: httplug.client
-        message_factory: httplug.message_factory
         format: xml

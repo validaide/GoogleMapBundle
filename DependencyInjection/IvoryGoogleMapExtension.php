@@ -26,9 +26,6 @@ use Symfony\Component\Serializer\SerializerInterface;
  */
 class IvoryGoogleMapExtension extends ConfigurableExtension
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function loadInternal(array $config, ContainerBuilder $container)
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
@@ -143,11 +140,9 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
         $definition = $container->getDefinition($serviceName = 'ivory.google_map.'.$service);
 
         if ($http) {
-            $loader->load('service/serializer.xml');
-
             $definition
                 ->addArgument(new Reference($config['client']))
-                ->addArgument(new Reference($config['message_factory']))
+//                ->addArgument(new Reference($config['message_factory']))
                 ->addArgument(new Reference(SerializerInterface::class));
         }
 

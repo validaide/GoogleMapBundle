@@ -21,25 +21,16 @@ use Ivory\Tests\GoogleMap\Helper\Functional\CompoundFunctionalTest as BaseCompou
  */
 class CompoundFunctionalTest extends BaseCompoundFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createMapHelper()
     {
         return HelperFactory::createMapHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createPlaceAutocompleteHelper()
     {
         return HelperFactory::createPlaceAutocompleteHelper();

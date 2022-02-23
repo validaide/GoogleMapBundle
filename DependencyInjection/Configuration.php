@@ -21,13 +21,10 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
  */
 class Configuration implements ConfigurationInterface
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder(): TreeBuilder
     {
         $treeBuilder = new TreeBuilder('ivory_google_map');
-        $rootNode    = method_exists(TreeBuilder::class, 'getRootNode') ? $treeBuilder->getRootNode() : $treeBuilder->root('ivory_google_map');
+        $rootNode    = $treeBuilder->getRootNode();
 
         $children = $rootNode
             ->children()
@@ -53,10 +50,7 @@ class Configuration implements ConfigurationInterface
         return $treeBuilder;
     }
 
-    /**
-     * @return ArrayNodeDefinition
-     */
-    private function createMapNode()
+    private function createMapNode(): ArrayNodeDefinition
     {
         return $this->createNode('map')
             ->addDefaultsIfNotSet()
@@ -67,10 +61,7 @@ class Configuration implements ConfigurationInterface
             ->end();
     }
 
-    /**
-     * @return ArrayNodeDefinition
-     */
-    private function createStaticMapNode()
+    private function createStaticMapNode(): ArrayNodeDefinition
     {
         return $this->createNode('static_map')
             ->addDefaultsIfNotSet()
@@ -80,13 +71,7 @@ class Configuration implements ConfigurationInterface
             ->end();
     }
 
-    /**
-     * @param string $service
-     * @param bool   $http
-     *
-     * @return ArrayNodeDefinition
-     */
-    private function createServiceNode($service, $http)
+    private function createServiceNode(string $service, bool $http): ArrayNodeDefinition
     {
         $node     = $this->createNode($service);
         $children = $node
@@ -100,10 +85,10 @@ class Configuration implements ConfigurationInterface
                 ->isRequired()
                 ->cannotBeEmpty()
                 ->end()
-                ->scalarNode('message_factory')
-                ->isRequired()
-                ->cannotBeEmpty()
-                ->end()
+//                ->scalarNode('message_factory')
+//                ->isRequired()
+//                ->cannotBeEmpty()
+//                ->end()
                 ->scalarNode('format')->end();
         } else {
             $node
@@ -118,12 +103,7 @@ class Configuration implements ConfigurationInterface
         return $node;
     }
 
-    /**
-     * @param bool $service
-     *
-     * @return ArrayNodeDefinition
-     */
-    private function createBusinessAccountNode($service)
+    private function createBusinessAccountNode(bool $service): ArrayNodeDefinition
     {
         $node         = $this->createNode('business_account');
         $clientIdNode = $node->children()
@@ -144,17 +124,12 @@ class Configuration implements ConfigurationInterface
     }
 
     /**
-     * @param string $name
-     * @param string $type
-     *
      * @return ArrayNodeDefinition|NodeDefinition
      */
-    private function createNode($name, $type = 'array')
+    private function createNode(string $name, string $type = 'array'): NodeDefinition
     {
         $treeBuilder = new TreeBuilder($name, $type);
 
-        $rootNode = method_exists(TreeBuilder::class, 'getRootNode') ? $treeBuilder->getRootNode() : $treeBuilder->root($name);
-
-        return $rootNode;
+        return $treeBuilder->getRootNode();
     }
 }

@@ -15,32 +15,26 @@ use Twig_Environment;
 use Twig_Loader_Filesystem;
 use Twig_Extension;
 use PHPUnit\Framework\TestCase;
+use Twig\Environment;
+use Twig\Extension\AbstractExtension;
+use Twig\Loader\FilesystemLoader;
 
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
 abstract class AbstractExtensionTest extends TestCase
 {
-    private Twig_Environment $twig;
+    private Environment $twig;
 
-    /**
-     * {@inheritdoc}
-     */
     protected function setUp(): void
     {
-        $this->twig = new Twig_Environment(new Twig_Loader_Filesystem([]));
+        $this->twig = new Environment(new FilesystemLoader([]));
         $this->twig->addExtension($this->createExtension());
     }
 
-    /**
-     * @return Twig_Extension
-     */
-    abstract protected function createExtension();
+    abstract protected function createExtension(): AbstractExtension;
 
-    /**
-     * @return Twig_Environment
-     */
-    protected function getTwig()
+    protected function getTwig(): Environment
     {
         return $this->twig;
     }

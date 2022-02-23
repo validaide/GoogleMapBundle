@@ -19,9 +19,6 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
  */
 class RegisterFormResourcePass implements CompilerPassInterface
 {
-    /**
-     * {@inheritdoc}
-     */
     public function process(ContainerBuilder $container)
     {
         if ($container->hasParameter($parameter = 'templating.helper.form.resources')) {
@@ -38,7 +35,7 @@ class RegisterFormResourcePass implements CompilerPassInterface
             $container->setParameter(
                 $parameter,
                 array_merge(
-                    ['IvoryGoogleMapBundle:Form:place_autocomplete_widget.html.twig'],
+                    ['@IvoryGoogleMap/Form/place_autocomplete_widget.html.twig'],
                     $container->getParameter($parameter)
                 )
             );

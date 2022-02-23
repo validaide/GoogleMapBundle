@@ -10,8 +10,8 @@
 
 # PHPUnit
 /build/tests
+/.phpunit.result.cache
 /phpunit.xml
 
 # PHPStorm
 /.idea
-/.phpunit.result.cache

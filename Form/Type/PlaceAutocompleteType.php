@@ -25,9 +25,6 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  */
 class PlaceAutocompleteType extends AbstractType
 {
-    /**
-     * {@inheritdoc}
-     */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $autocomplete = new Autocomplete();
@@ -60,9 +57,6 @@ class PlaceAutocompleteType extends AbstractType
         $builder->setAttribute('autocomplete', $autocomplete);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function finishView(FormView $view, FormInterface $form, array $options)
     {
         $autocomplete = $form->getConfig()->getAttribute('autocomplete');
@@ -74,9 +68,6 @@ class PlaceAutocompleteType extends AbstractType
         $view->vars['autocomplete'] = $autocomplete;
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver
@@ -104,25 +95,16 @@ class PlaceAutocompleteType extends AbstractType
             ->addAllowedTypes('api', 'bool');
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getParent()
     {
         return method_exists(AbstractType::class, 'getBlockPrefix') ? TextType::class : 'text';
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getBlockPrefix()
     {
         return 'place_autocomplete';
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getName()
     {
         return $this->getBlockPrefix();

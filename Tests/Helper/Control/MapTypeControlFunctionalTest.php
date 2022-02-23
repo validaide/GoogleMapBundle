@@ -21,17 +21,11 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Control\MapTypeControlFunctionalTest
  */
 class MapTypeControlFunctionalTest extends BaseMapTypeControlFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createMapHelper()
     {
         return HelperFactory::createMapHelper();

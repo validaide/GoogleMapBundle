@@ -30,9 +30,6 @@ class PlaceAutocompleteTypeTest extends TestCase
 {
     private FormFactoryInterface $factory;
 
-    /**
-     * {@inheritdoc}
-     */
     protected function setUp(): void
     {
         $this->factory = Forms::createFormFactoryBuilder()

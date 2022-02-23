@@ -21,17 +21,11 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Overlay\RectangleFunctionalTest as B
  */
 class RectangleFunctionalTest extends BaseRectangleFunctionalTest
 {
-    /**
-     * {@inheritdoc}
-     */
     protected function createApiHelper()
     {
         return HelperFactory::createApiHelper();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function createMapHelper()
     {
         return HelperFactory::createMapHelper();

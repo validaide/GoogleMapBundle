@@ -27,42 +27,27 @@ class HelperFactory
 {
     private static ?ContainerBuilder $container = null;
 
-    /**
-     * @return ApiHelper
-     */
-    public static function createApiHelper()
+    public static function createApiHelper(): ApiHelper
     {
         return self::getContainer()->get('ivory.google_map.helper.api');
     }
 
-    /**
-     * @return MapHelper
-     */
-    public static function createMapHelper()
+    public static function createMapHelper(): MapHelper
     {
         return self::getContainer()->get('ivory.google_map.helper.map');
     }
 
-    /**
-     * @return StaticMapHelper
-     */
-    public static function createStaticMapHelper()
+    public static function createStaticMapHelper(): StaticMapHelper
     {
         return self::getContainer()->get('ivory.google_map.helper.map.static');
     }
 
-    /**
-     * @return PlaceAutocompleteHelper
-     */
-    public static function createPlaceAutocompleteHelper()
+    public static function createPlaceAutocompleteHelper(): PlaceAutocompleteHelper
     {
         return self::getContainer()->get('ivory.google_map.helper.place_autocomplete');
     }
 
-    /**
-     * @return ContainerInterface
-     */
-    private static function getContainer()
+    private static function getContainer(): ContainerInterface
     {
         if (self::$container !== null) {
             return self::$container;
