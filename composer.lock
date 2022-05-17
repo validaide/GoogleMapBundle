@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57ad6c83e9c2d600e09bbf513848ff0c",
+    "content-hash": "badef41b4acd40fb97f4fa5d7cf16336",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -4039,16 +4039,16 @@
         },
         {
             "name": "validaide/common",
-            "version": "5.0.0",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/common.git",
-                "reference": "8d6f83a1dd57064a3603bb7c17f89f1341f6b9d3"
+                "reference": "db2b41aee8922013b7019c062ca0db378c5cfc58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/common/zipball/8d6f83a1dd57064a3603bb7c17f89f1341f6b9d3",
-                "reference": "8d6f83a1dd57064a3603bb7c17f89f1341f6b9d3",
+                "url": "https://api.github.com/repos/validaide/common/zipball/db2b41aee8922013b7019c062ca0db378c5cfc58",
+                "reference": "db2b41aee8922013b7019c062ca0db378c5cfc58",
                 "shasum": ""
             },
             "require": {
@@ -4089,20 +4089,20 @@
                 }
             ],
             "description": "Common Library for Validaide projects",
-            "time": "2022-04-22T14:53:22+00:00"
+            "time": "2022-05-17T11:34:09+00:00"
         },
         {
             "name": "validaide/google-map",
-            "version": "5.0.0",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "b4e0b98d83f76d18edcf401b14ec8f1f720e54b6"
+                "reference": "847383ce3f3b6dafc1d22e92c57ef4d83120b35f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/b4e0b98d83f76d18edcf401b14ec8f1f720e54b6",
-                "reference": "b4e0b98d83f76d18edcf401b14ec8f1f720e54b6",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/847383ce3f3b6dafc1d22e92c57ef4d83120b35f",
+                "reference": "847383ce3f3b6dafc1d22e92c57ef4d83120b35f",
                 "shasum": ""
             },
             "require": {
@@ -4111,7 +4111,7 @@
                 "symfony/event-dispatcher": "^4.4",
                 "symfony/property-access": "^4.4",
                 "symfony/serializer": "^4.4",
-                "validaide/common": "5.0.*"
+                "validaide/common": "5.1.*"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.0",
@@ -4162,7 +4162,7 @@
                 "map",
                 "validaide"
             ],
-            "time": "2022-04-22T14:53:48+00:00"
+            "time": "2022-05-17T11:34:33+00:00"
         }
     ],
     "packages-dev": [
