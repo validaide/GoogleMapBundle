@@ -20,23 +20,12 @@ use Symfony\Component\Templating\Helper\Helper;
  */
 class PlaceAutocompleteHelper extends Helper
 {
-    /**
-     * @var BasePlaceAutocompleteHelper
-     */
-    private BasePlaceAutocompleteHelper $placeAutocompleteHelper;
-
-    /**
-     * @param BasePlaceAutocompleteHelper $placeAutocompleteHelper
-     */
-    public function __construct(BasePlaceAutocompleteHelper $placeAutocompleteHelper)
+    public function __construct(private readonly BasePlaceAutocompleteHelper $placeAutocompleteHelper)
     {
-        $this->placeAutocompleteHelper = $placeAutocompleteHelper;
     }
 
     /**
-     * @param Autocomplete $autocomplete
      * @param string[]     $attributes
-     *
      * @return string
      */
     public function render(Autocomplete $autocomplete, array $attributes = [])
@@ -47,9 +36,7 @@ class PlaceAutocompleteHelper extends Helper
     }
 
     /**
-     * @param Autocomplete $autocomplete
      * @param string[]     $attributes
-     *
      * @return string
      */
     public function renderHtml(Autocomplete $autocomplete, array $attributes = [])
@@ -60,8 +47,6 @@ class PlaceAutocompleteHelper extends Helper
     }
 
     /**
-     * @param Autocomplete $autocomplete
-     *
      * @return string
      */
     public function renderJavascript(Autocomplete $autocomplete)

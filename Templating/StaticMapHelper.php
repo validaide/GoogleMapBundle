@@ -20,22 +20,11 @@ use Symfony\Component\Templating\Helper\Helper;
  */
 class StaticMapHelper extends Helper
 {
-    /**
-     * @var BaseStaticMapHelper
-     */
-    private BaseStaticMapHelper $staticMapHelper;
-
-    /**
-     * @param BaseStaticMapHelper $staticMapHelper
-     */
-    public function __construct(BaseStaticMapHelper $staticMapHelper)
+    public function __construct(private readonly BaseStaticMapHelper $staticMapHelper)
     {
-        $this->staticMapHelper = $staticMapHelper;
     }
 
     /**
-     * @param Map $map
-     *
      * @return string
      */
     public function render(Map $map)

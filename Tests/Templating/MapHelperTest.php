@@ -24,10 +24,7 @@ class MapHelperTest extends TestCase
 {
     private MapHelper $mapHelper;
 
-    /**
-     * @var BaseMapHelper|MockObject
-     */
-    private $innerMapHelper;
+    private BaseMapHelper|MockObject $innerMapHelper;
 
     protected function setUp(): void
     {
@@ -84,18 +81,12 @@ class MapHelperTest extends TestCase
         $this->assertSame('ivory_google_map', $this->mapHelper->getName());
     }
 
-    /**
-     * @return MockObject|BaseMapHelper
-     */
-    private function createMapHelperMock()
+    private function createMapHelperMock(): MockObject|BaseMapHelper
     {
         return $this->createMock(BaseMapHelper::class);
     }
 
-    /**
-     * @return MockObject|Map
-     */
-    private function createMapMock()
+    private function createMapMock(): MockObject|Map
     {
         return $this->createMock(Map::class);
     }

@@ -21,11 +21,8 @@ use Twig\TwigFunction;
  */
 class PlaceAutocompleteExtension extends AbstractExtension
 {
-    private PlaceAutocompleteHelper $placeAutocompleteHelper;
-
-    public function __construct(PlaceAutocompleteHelper $placeAutocompleteHelper)
+    public function __construct(private readonly PlaceAutocompleteHelper $placeAutocompleteHelper)
     {
-        $this->placeAutocompleteHelper = $placeAutocompleteHelper;
     }
 
     public function getFunctions()
@@ -40,9 +37,7 @@ class PlaceAutocompleteExtension extends AbstractExtension
     }
 
     /**
-     * @param Autocomplete $autocomplete
      * @param string[]     $attributes
-     *
      * @return string
      */
     public function render(Autocomplete $autocomplete, array $attributes = [])
@@ -53,9 +48,7 @@ class PlaceAutocompleteExtension extends AbstractExtension
     }
 
     /**
-     * @param Autocomplete $autocomplete
      * @param string[]     $attributes
-     *
      * @return string
      */
     public function renderHtml(Autocomplete $autocomplete, array $attributes = [])
@@ -66,8 +59,6 @@ class PlaceAutocompleteExtension extends AbstractExtension
     }
 
     /**
-     * @param Autocomplete $autocomplete
-     *
      * @return string
      */
     public function renderJavascript(Autocomplete $autocomplete)

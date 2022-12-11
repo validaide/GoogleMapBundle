@@ -20,23 +20,12 @@ use Symfony\Component\Templating\Helper\Helper;
  */
 class MapHelper extends Helper
 {
-    /**
-     * @var BaseMapHelper
-     */
-    private BaseMapHelper $mapHelper;
-
-    /**
-     * @param BaseMapHelper $mapHelper
-     */
-    public function __construct(BaseMapHelper $mapHelper)
+    public function __construct(private readonly BaseMapHelper $mapHelper)
     {
-        $this->mapHelper = $mapHelper;
     }
 
     /**
-     * @param Map      $map
      * @param string[] $attributes
-     *
      * @return string
      */
     public function render(Map $map, array $attributes = [])
@@ -47,9 +36,7 @@ class MapHelper extends Helper
     }
 
     /**
-     * @param Map      $map
      * @param string[] $attributes
-     *
      * @return string
      */
     public function renderHtml(Map $map, array $attributes = [])
@@ -60,8 +47,6 @@ class MapHelper extends Helper
     }
 
     /**
-     * @param Map $map
-     *
      * @return string
      */
     public function renderStylesheet(Map $map)
@@ -70,8 +55,6 @@ class MapHelper extends Helper
     }
 
     /**
-     * @param Map $map
-     *
      * @return string
      */
     public function renderJavascript(Map $map)

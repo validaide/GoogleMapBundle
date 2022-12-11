@@ -52,7 +52,6 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
 
     /**
      * @param mixed[]          $config
-     * @param ContainerBuilder $container
      */
     private function loadMapConfig(array $config, ContainerBuilder $container)
     {
@@ -75,7 +74,6 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
 
     /**
      * @param mixed[]          $config
-     * @param ContainerBuilder $container
      */
     private function loadStaticMapConfig(array $config, ContainerBuilder $container)
     {
@@ -98,8 +96,6 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
 
     /**
      * @param mixed[]          $config
-     * @param ContainerBuilder $container
-     * @param LoaderInterface  $loader
      */
     private function loadServicesConfig(array $config, ContainerBuilder $container, LoaderInterface $loader)
     {
@@ -125,8 +121,6 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
     /**
      * @param string           $service
      * @param mixed[]          $config
-     * @param ContainerBuilder $container
-     * @param LoaderInterface  $loader
      * @param bool             $http
      */
     private function loadServiceConfig(
