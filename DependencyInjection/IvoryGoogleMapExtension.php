@@ -90,9 +90,9 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
 
             $container
                 ->getDefinition('ivory.google_map.helper.map.static')
-                ->addArgument(isset($businessAccount['secret']) ? $businessAccount['secret'] : null)
-                ->addArgument(isset($businessAccount['client_id']) ? $businessAccount['client_id'] : null)
-                ->addArgument(isset($businessAccount['channel']) ? $businessAccount['channel'] : null);
+                ->addArgument($businessAccount['secret'] ?? null)
+                ->addArgument($businessAccount['client_id'] ?? null)
+                ->addArgument($businessAccount['channel'] ?? null);
         }
     }
 
@@ -162,7 +162,7 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
                 new Definition(BusinessAccount::class, [
                     $businessAccountConfig['client_id'],
                     $businessAccountConfig['secret'],
-                    isset($businessAccountConfig['channel']) ? $businessAccountConfig['channel'] : null,
+                    $businessAccountConfig['channel'] ?? null,
                 ])
             );
 

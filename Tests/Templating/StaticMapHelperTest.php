@@ -22,7 +22,7 @@ use PHPUnit\Framework\TestCase;
  */
 class StaticMapHelperTest extends TestCase
 {
-    private \Ivory\GoogleMapBundle\Templating\StaticMapHelper $staticMapHelper;
+    private StaticMapHelper $staticMapHelper;
 
     /**
      * @var BaseStaticMapHelper|MockObject

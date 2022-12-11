@@ -23,7 +23,7 @@ use Twig\Extension\AbstractExtension;
 class PlaceAutocompleteExtensionTest extends AbstractExtensionTest
 {
     /**
-     * @var PlaceAutocompleteHelper|MockObject
+     * @var PlaceAutocompleteHelper|MockObject|null
      */
     private $placeAutocompleteHelper;
 

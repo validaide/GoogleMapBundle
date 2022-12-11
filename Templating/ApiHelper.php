@@ -22,7 +22,7 @@ class ApiHelper extends Helper
     /**
      * @var BaseApiHelper
      */
-    private $apiHelper;
+    private BaseApiHelper $apiHelper;
 
     /**
      * @param BaseApiHelper $apiHelper
