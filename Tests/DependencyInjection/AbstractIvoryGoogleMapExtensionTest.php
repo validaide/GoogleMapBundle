@@ -46,13 +46,10 @@ abstract class AbstractIvoryGoogleMapExtensionTest extends TestCase
 
     private ?bool $debug = null;
 
-    /**
-     * @var string
-     */
-    private $locale;
+    private ?string $locale = null;
 
     /**
-     * @var HttpClient|MockObject
+     * @var HttpClient|MockObject|null
      */
     private $client;
 
@@ -62,7 +59,7 @@ abstract class AbstractIvoryGoogleMapExtensionTest extends TestCase
     private $messageFactory;
 
     /**
-     * @var SerializerInterface|MockObject
+     * @var MockObject|SerializerInterface|null
      */
     private $serializer;
 

@@ -36,7 +36,7 @@ class RegisterHelperListenerPass implements CompilerPassInterface
     /**
      * @var RegisterListenersPass[]
      */
-    private $passes = [];
+    private array $passes = [];
 
     public function __construct()
     {

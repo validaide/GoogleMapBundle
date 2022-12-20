@@ -23,7 +23,7 @@ class MapHelper extends Helper
     /**
      * @var BaseMapHelper
      */
-    private $mapHelper;
+    private BaseMapHelper $mapHelper;
 
     /**
      * @param BaseMapHelper $mapHelper

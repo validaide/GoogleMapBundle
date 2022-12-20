@@ -21,10 +21,7 @@ use Twig\TwigFunction;
  */
 class StaticMapExtension extends AbstractExtension
 {
-    /**
-     * @var StaticMapHelper
-     */
-    private $staticMapHelper;
+    private StaticMapHelper $staticMapHelper;
 
     /**
      * @param StaticMapHelper $staticMapHelper

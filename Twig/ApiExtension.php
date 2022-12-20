@@ -20,10 +20,7 @@ use Twig\TwigFunction;
  */
 class ApiExtension extends AbstractExtension
 {
-    /**
-     * @var ApiHelper
-     */
-    private $apiHelper;
+    private ApiHelper $apiHelper;
 
     /**
      * @param ApiHelper $apiHelper

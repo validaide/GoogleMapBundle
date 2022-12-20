@@ -23,7 +23,7 @@ class PlaceAutocompleteHelper extends Helper
     /**
      * @var BasePlaceAutocompleteHelper
      */
-    private $placeAutocompleteHelper;
+    private BasePlaceAutocompleteHelper $placeAutocompleteHelper;
 
     /**
      * @param BasePlaceAutocompleteHelper $placeAutocompleteHelper
