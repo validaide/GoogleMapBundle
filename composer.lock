@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c3dca1d35ed7ece21e546756785cfc9",
+    "content-hash": "074197bb5b0ba5d204a520ae5f234a79",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -3965,16 +3965,16 @@
         },
         {
             "name": "validaide/google-map",
-            "version": "dev-chore/183558977_php81",
+            "version": "dev-development",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "aadb4b6c83d663e12ffd34c2036feb0bedaa2e3d"
+                "reference": "99633b35765ff084c50b1beb30c95fb967254743"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/aadb4b6c83d663e12ffd34c2036feb0bedaa2e3d",
-                "reference": "aadb4b6c83d663e12ffd34c2036feb0bedaa2e3d",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/99633b35765ff084c50b1beb30c95fb967254743",
+                "reference": "99633b35765ff084c50b1beb30c95fb967254743",
                 "shasum": ""
             },
             "require": {
@@ -4036,7 +4036,7 @@
                 "map",
                 "validaide"
             ],
-            "time": "2022-12-20T11:00:26+00:00"
+            "time": "2022-12-20T13:35:45+00:00"
         }
     ],
     "packages-dev": [
@@ -7815,7 +7815,7 @@
         },
         {
             "package": "validaide/google-map",
-            "version": "dev-chore/183558977_php81",
+            "version": "dev-development",
             "alias": "5.5.0",
             "alias_normalized": "5.5.0.0"
         }
