@@ -15,9 +15,6 @@ use Ivory\GoogleMap\Helper\ApiHelper;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
-/**
- * @author GeLo <geloen.eric@gmail.com>
- */
 class ApiExtension extends AbstractExtension
 {
     private ApiHelper $apiHelper;

@@ -1,13 +1,5 @@
 <?php
 
-/*
- * This file is part of the Ivory Google Map bundle package.
- *
- * (c) Eric GELOEN <geloen.eric@gmail.com>
- *
- * For the full copyright and license information, please read the LICENSE
- * file that was distributed with this source code.
- */
 
 namespace Ivory\GoogleMapBundle\Tests\Twig;
 
@@ -17,9 +9,6 @@ use Ivory\GoogleMap\Place\Autocomplete;
 use Ivory\GoogleMapBundle\Twig\PlaceAutocompleteExtension;
 use Twig\Extension\AbstractExtension;
 
-/**
- * @author GeLo <geloen.eric@gmail.com>
- */
 class PlaceAutocompleteExtensionTest extends AbstractExtensionTest
 {
     /**

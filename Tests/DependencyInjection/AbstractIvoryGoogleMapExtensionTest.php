@@ -1,13 +1,5 @@
 <?php
 
-/*
- * This file is part of the Ivory Google Map bundle package.
- *
- * (c) Eric GELOEN <geloen.eric@gmail.com>
- *
- * For the full copyright and license information, please read the LICENSE
- * file that was distributed with this source code.
- */
 
 namespace Ivory\GoogleMapBundle\Tests\DependencyInjection;
 
@@ -37,9 +29,6 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\Serializer\SerializerInterface;
 
-/**
- * @author GeLo <geloen.eric@gmail.com>
- */
 abstract class AbstractIvoryGoogleMapExtensionTest extends TestCase
 {
     private ContainerBuilder $container;

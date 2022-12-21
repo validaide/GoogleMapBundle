@@ -20,9 +20,6 @@ use Ivory\GoogleMapBundle\IvoryGoogleMapBundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-/**
- * @author GeLo <geloen.eric@gmail.com>
- */
 class HelperFactory
 {
     private static ?ContainerBuilder $container = null;
