@@ -11,6 +11,8 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Helper\Control;
 
+use Ivory\GoogleMap\Helper\MapHelper;
+use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\GoogleMapBundle\Tests\Helper\HelperFactory;
 use Ivory\Tests\GoogleMap\Helper\Functional\Control\FullscreenControlFunctionalTest as BaseFullscreenControlFunctionalTest;
 
@@ -21,12 +23,12 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Control\FullscreenControlFunctionalT
  */
 class FullscreenControlFunctionalTest extends BaseFullscreenControlFunctionalTest
 {
-    protected function createApiHelper()
+    protected function createApiHelper(): ApiHelper
     {
         return HelperFactory::createApiHelper();
     }
 
-    protected function createMapHelper()
+    protected function createMapHelper(): MapHelper
     {
         return HelperFactory::createMapHelper();
     }

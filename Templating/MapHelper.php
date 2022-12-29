@@ -28,7 +28,7 @@ class MapHelper extends Helper
      *
      * @return string
      */
-    public function render(Map $map, array $attributes = [])
+    public function render(Map $map, array $attributes = []): string
     {
         $map->addHtmlAttributes($attributes);
 
@@ -41,7 +41,7 @@ class MapHelper extends Helper
      *
      * @return string
      */
-    public function renderHtml(Map $map, array $attributes = [])
+    public function renderHtml(Map $map, array $attributes = []): string
     {
         $map->addHtmlAttributes($attributes);
 
@@ -53,7 +53,7 @@ class MapHelper extends Helper
      *
      * @return string
      */
-    public function renderStylesheet(Map $map)
+    public function renderStylesheet(Map $map): string
     {
         return $this->mapHelper->renderStylesheet($map);
     }
@@ -63,12 +63,12 @@ class MapHelper extends Helper
      *
      * @return string
      */
-    public function renderJavascript(Map $map)
+    public function renderJavascript(Map $map): string
     {
         return $this->mapHelper->renderJavascript($map);
     }
 
-    public function getName()
+    public function getName(): string
     {
         return 'ivory_google_map';
     }

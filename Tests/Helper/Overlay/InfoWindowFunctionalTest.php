@@ -11,6 +11,8 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Helper\Overlay;
 
+use Ivory\GoogleMap\Helper\MapHelper;
+use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\GoogleMapBundle\Tests\Helper\HelperFactory;
 use Ivory\Tests\GoogleMap\Helper\Functional\Overlay\InfoWindowFunctionalTest as BaseInfoWindowFunctionalTest;
 
@@ -21,12 +23,12 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Overlay\InfoWindowFunctionalTest as 
  */
 class InfoWindowFunctionalTest extends BaseInfoWindowFunctionalTest
 {
-    protected function createApiHelper()
+    protected function createApiHelper(): ApiHelper
     {
         return HelperFactory::createApiHelper();
     }
 
-    protected function createMapHelper()
+    protected function createMapHelper(): MapHelper
     {
         return HelperFactory::createMapHelper();
     }

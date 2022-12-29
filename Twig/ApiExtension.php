@@ -19,15 +19,12 @@ class ApiExtension extends AbstractExtension
 {
     private ApiHelper $apiHelper;
 
-    /**
-     * @param ApiHelper $apiHelper
-     */
     public function __construct(ApiHelper $apiHelper)
     {
         $this->apiHelper = $apiHelper;
     }
 
-    public function getFunctions()
+    public function getFunctions(): array
     {
         $functions = [];
 
@@ -38,17 +35,12 @@ class ApiExtension extends AbstractExtension
         return $functions;
     }
 
-    /**
-     * @param object[] $objects
-     *
-     * @return string
-     */
-    public function render(array $objects)
+    public function render(array $objects): string
     {
         return $this->apiHelper->render($objects);
     }
 
-    public function getName()
+    public function getName(): string
     {
         return 'ivory_google_api';
     }
@@ -56,7 +48,7 @@ class ApiExtension extends AbstractExtension
     /**
      * @return string[]
      */
-    private function getMapping()
+    private function getMapping(): array
     {
         return ['ivory_google_api' => 'render'];
     }

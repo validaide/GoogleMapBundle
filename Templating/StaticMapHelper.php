@@ -27,12 +27,12 @@ class StaticMapHelper extends Helper
      *
      * @return string
      */
-    public function render(Map $map)
+    public function render(Map $map): string
     {
         return $this->staticMapHelper->render($map);
     }
 
-    public function getName()
+    public function getName(): string
     {
         return 'ivory_google_map_static';
     }

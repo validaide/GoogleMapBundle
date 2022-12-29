@@ -11,6 +11,8 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Helper\Layer;
 
+use Ivory\GoogleMap\Helper\MapHelper;
+use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\GoogleMapBundle\Tests\Helper\HelperFactory;
 use Ivory\Tests\GoogleMap\Helper\Functional\Layer\HeatmapLayerFunctionalTest as BaseHeatmapLayerFunctionalTest;
 
@@ -21,12 +23,12 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Layer\HeatmapLayerFunctionalTest as 
  */
 class HeatmapLayerFunctionalTest extends BaseHeatmapLayerFunctionalTest
 {
-    protected function createApiHelper()
+    protected function createApiHelper(): ApiHelper
     {
         return HelperFactory::createApiHelper();
     }
 
-    protected function createMapHelper()
+    protected function createMapHelper(): MapHelper
     {
         return HelperFactory::createMapHelper();
     }

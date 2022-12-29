@@ -6,6 +6,9 @@
             <directory suffix="Test.php">./Tests</directory>
         </testsuite>
     </testsuites>
+    <listeners>
+        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener"/>
+    </listeners>
     <php>
         <server name="API_KEY" value="AIzaSyDtwY_hEqr8yBBZ5CrWjVjoc54P_qdL35c" />
         <server name="API_SECRET" value="hqEBa9KVm8DFFK3_F77fQc8cLq4=" />

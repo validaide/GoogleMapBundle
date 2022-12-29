@@ -11,6 +11,9 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Functional;
 
+use Ivory\GoogleMap\Helper\PlaceAutocompleteHelper;
+use Ivory\GoogleMap\Helper\MapHelper;
+use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\GoogleMapBundle\Tests\Helper\HelperFactory;
 use Ivory\Tests\GoogleMap\Helper\Functional\CompoundFunctionalTest as BaseCompoundFunctionalTest;
 
@@ -21,17 +24,17 @@ use Ivory\Tests\GoogleMap\Helper\Functional\CompoundFunctionalTest as BaseCompou
  */
 class CompoundFunctionalTest extends BaseCompoundFunctionalTest
 {
-    protected function createApiHelper()
+    protected function createApiHelper(): ApiHelper
     {
         return HelperFactory::createApiHelper();
     }
 
-    protected function createMapHelper()
+    protected function createMapHelper(): MapHelper
     {
         return HelperFactory::createMapHelper();
     }
 
-    protected function createPlaceAutocompleteHelper()
+    protected function createPlaceAutocompleteHelper(): PlaceAutocompleteHelper
     {
         return HelperFactory::createPlaceAutocompleteHelper();
     }

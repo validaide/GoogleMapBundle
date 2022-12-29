@@ -12,15 +12,12 @@ class StaticMapExtension extends AbstractExtension
 {
     private StaticMapHelper $staticMapHelper;
 
-    /**
-     * @param StaticMapHelper $staticMapHelper
-     */
     public function __construct(StaticMapHelper $staticMapHelper)
     {
         $this->staticMapHelper = $staticMapHelper;
     }
 
-    public function getFunctions()
+    public function getFunctions(): array
     {
         $functions = [];
 
@@ -31,17 +28,12 @@ class StaticMapExtension extends AbstractExtension
         return $functions;
     }
 
-    /**
-     * @param Map $map
-     *
-     * @return string
-     */
-    public function render(Map $map)
+    public function render(Map $map): string
     {
         return $this->staticMapHelper->render($map);
     }
 
-    public function getName()
+    public function getName(): string
     {
         return 'ivory_google_map_static';
     }
@@ -49,7 +41,7 @@ class StaticMapExtension extends AbstractExtension
     /**
      * @return string[]
      */
-    private function getMapping()
+    private function getMapping(): array
     {
         return ['ivory_google_map_static' => 'render'];
     }

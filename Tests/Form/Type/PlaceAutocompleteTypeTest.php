@@ -116,7 +116,7 @@ class PlaceAutocompleteTypeTest extends TestCase
      *
      * @return FormInterface
      */
-    private function createForm($data = null, array $options = [])
+    private function createForm($data = null, array $options = []): FormInterface
     {
         return $this->factory->create(
             method_exists(AbstractType::class, 'getBlockPrefix') ? PlaceAutocompleteType::class : 'place_autocomplete',
