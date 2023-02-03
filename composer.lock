@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "074197bb5b0ba5d204a520ae5f234a79",
+    "content-hash": "0d36f4ba274aa0b9e25932b5df0c6b04",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -3910,16 +3910,16 @@
         },
         {
             "name": "validaide/common",
-            "version": "dev-development",
+            "version": "5.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/common.git",
-                "reference": "294cbe7f94bda817fa434f698b6f22ae2e19a4a1"
+                "reference": "47819cf0f8bce27a91323714ee822f301d024e50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/common/zipball/294cbe7f94bda817fa434f698b6f22ae2e19a4a1",
-                "reference": "294cbe7f94bda817fa434f698b6f22ae2e19a4a1",
+                "url": "https://api.github.com/repos/validaide/common/zipball/47819cf0f8bce27a91323714ee822f301d024e50",
+                "reference": "47819cf0f8bce27a91323714ee822f301d024e50",
                 "shasum": ""
             },
             "require": {
@@ -3939,7 +3939,6 @@
                 "rector/rector": "^0.15.0",
                 "symplify/easy-coding-standard": "^9.4"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3961,20 +3960,20 @@
                 }
             ],
             "description": "Common Library for Validaide projects",
-            "time": "2022-12-20T10:25:38+00:00"
+            "time": "2023-02-03T09:54:43+00:00"
         },
         {
             "name": "validaide/google-map",
-            "version": "dev-development",
+            "version": "5.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "99633b35765ff084c50b1beb30c95fb967254743"
+                "reference": "bd45d67297625e5894351979d6290488cdc625ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/99633b35765ff084c50b1beb30c95fb967254743",
-                "reference": "99633b35765ff084c50b1beb30c95fb967254743",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/bd45d67297625e5894351979d6290488cdc625ba",
+                "reference": "bd45d67297625e5894351979d6290488cdc625ba",
                 "shasum": ""
             },
             "require": {
@@ -3983,7 +3982,7 @@
                 "symfony/event-dispatcher": "^4.4",
                 "symfony/property-access": "^4.4",
                 "symfony/serializer": "^4.4",
-                "validaide/common": "dev-development as 5.5.0"
+                "validaide/common": "5.6.*"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.0",
@@ -4036,7 +4035,7 @@
                 "map",
                 "validaide"
             ],
-            "time": "2022-12-20T13:35:45+00:00"
+            "time": "2023-02-03T09:55:18+00:00"
         }
     ],
     "packages-dev": [
@@ -7806,30 +7805,14 @@
             "time": "2022-09-28T08:42:51+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "validaide/common",
-            "version": "dev-development",
-            "alias": "5.5.0",
-            "alias_normalized": "5.5.0.0"
-        },
-        {
-            "package": "validaide/google-map",
-            "version": "dev-development",
-            "alias": "5.5.0",
-            "alias_normalized": "5.5.0.0"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "validaide/common": 20,
-        "validaide/google-map": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.4 | ^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.1.0"
 }
