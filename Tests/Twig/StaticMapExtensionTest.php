@@ -23,7 +23,7 @@ use Twig\Extension\AbstractExtension;
 class StaticMapExtensionTest extends AbstractExtensionTest
 {
     /**
-     * @var StaticMapHelper|MockObject
+     * @var StaticMapHelper|MockObject|null
      */
     private $staticMapHelper;
 

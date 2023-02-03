@@ -23,7 +23,7 @@ use Twig\Extension\AbstractExtension;
 class ApiExtensionTest extends AbstractExtensionTest
 {
     /**
-     * @var ApiHelper|MockObject
+     * @var ApiHelper|MockObject|null
      */
     private $apiHelper;
 

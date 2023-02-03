@@ -94,9 +94,7 @@ class Configuration implements ConfigurationInterface
             $node
                 ->beforeNormalization()
                 ->ifNull()
-                ->then(function () {
-                    return [];
-                })
+                ->then(fn() => [])
                 ->end();
         }
 

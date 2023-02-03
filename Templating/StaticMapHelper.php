@@ -23,7 +23,7 @@ class StaticMapHelper extends Helper
     /**
      * @var BaseStaticMapHelper
      */
-    private $staticMapHelper;
+    private BaseStaticMapHelper $staticMapHelper;
 
     /**
      * @param BaseStaticMapHelper $staticMapHelper
