@@ -25,10 +25,9 @@ class PlaceAutocompleteHelper extends Helper
     }
 
     /**
-     * @param string[]     $attributes
-     * @return string
+     * @param string[] $attributes
      */
-    public function render(Autocomplete $autocomplete, array $attributes = [])
+    public function render(Autocomplete $autocomplete, array $attributes = []): string
     {
         $autocomplete->addInputAttributes($attributes);
 
@@ -36,25 +35,21 @@ class PlaceAutocompleteHelper extends Helper
     }
 
     /**
-     * @param string[]     $attributes
-     * @return string
+     * @param string[] $attributes
      */
-    public function renderHtml(Autocomplete $autocomplete, array $attributes = [])
+    public function renderHtml(Autocomplete $autocomplete, array $attributes = []): string
     {
         $autocomplete->addInputAttributes($attributes);
 
         return $this->placeAutocompleteHelper->renderHtml($autocomplete);
     }
 
-    /**
-     * @return string
-     */
-    public function renderJavascript(Autocomplete $autocomplete)
+    public function renderJavascript(Autocomplete $autocomplete): string
     {
         return $this->placeAutocompleteHelper->renderJavascript($autocomplete);
     }
 
-    public function getName()
+    public function getName(): string
     {
         return 'ivory_google_place_autocomplete';
     }
