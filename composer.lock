@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1144d96c837c815c3d0932ffdec4eef",
+    "content-hash": "6a7b48fc347182f41b1450ba5a7bbe6d",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -3910,16 +3910,16 @@
         },
         {
             "name": "validaide/common",
-            "version": "dev-chore/184007845_drop_php74",
+            "version": "dev-development",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/common.git",
-                "reference": "16562422c6a7217c6c89e06d9e7ce1f2bedb36fa"
+                "reference": "0b94bf336cbc2607dc2ea66cca1172a4f6e6c102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/common/zipball/16562422c6a7217c6c89e06d9e7ce1f2bedb36fa",
-                "reference": "16562422c6a7217c6c89e06d9e7ce1f2bedb36fa",
+                "url": "https://api.github.com/repos/validaide/common/zipball/0b94bf336cbc2607dc2ea66cca1172a4f6e6c102",
+                "reference": "0b94bf336cbc2607dc2ea66cca1172a4f6e6c102",
                 "shasum": ""
             },
             "require": {
@@ -3939,6 +3939,7 @@
                 "rector/rector": "^0.15.0",
                 "symplify/easy-coding-standard": "^9.4"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3960,20 +3961,20 @@
                 }
             ],
             "description": "Common Library for Validaide projects",
-            "time": "2023-03-02T10:16:13+00:00"
+            "time": "2023-03-20T15:00:11+00:00"
         },
         {
             "name": "validaide/google-map",
-            "version": "dev-chore/184007858_drop_php74",
+            "version": "dev-development",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "b8af629d2dfe9e922a6e060eb094229ae40f4074"
+                "reference": "0dc6a8d8abe1b6f4cb5fb6f95ab4227bb6d57f8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/b8af629d2dfe9e922a6e060eb094229ae40f4074",
-                "reference": "b8af629d2dfe9e922a6e060eb094229ae40f4074",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/0dc6a8d8abe1b6f4cb5fb6f95ab4227bb6d57f8b",
+                "reference": "0dc6a8d8abe1b6f4cb5fb6f95ab4227bb6d57f8b",
                 "shasum": ""
             },
             "require": {
@@ -3982,7 +3983,7 @@
                 "symfony/event-dispatcher": "^4.4",
                 "symfony/property-access": "^4.4",
                 "symfony/serializer": "^4.4",
-                "validaide/common": "dev-chore/184007845_drop_php74 as 5.6.0"
+                "validaide/common": "dev-development as 5.6.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.0",
@@ -4030,7 +4031,7 @@
                 "map",
                 "validaide"
             ],
-            "time": "2023-03-02T10:59:42+00:00"
+            "time": "2023-03-20T15:55:52+00:00"
         }
     ],
     "packages-dev": [
@@ -5488,16 +5489,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.3",
+            "version": "1.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "5419375b5891add97dc74be71e6c1c34baaddf64"
+                "reference": "b10ceb526d9607903c5b2673f1fc8775dbe48975"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/5419375b5891add97dc74be71e6c1c34baaddf64",
-                "reference": "5419375b5891add97dc74be71e6c1c34baaddf64",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b10ceb526d9607903c5b2673f1fc8775dbe48975",
+                "reference": "b10ceb526d9607903c5b2673f1fc8775dbe48975",
                 "shasum": ""
             },
             "require": {
@@ -5526,8 +5527,11 @@
                 "static analysis"
             ],
             "support": {
+                "docs": "https://phpstan.org/user-guide/getting-started",
+                "forum": "https://github.com/phpstan/phpstan/discussions",
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.10.3"
+                "security": "https://github.com/phpstan/phpstan/security/policy",
+                "source": "https://github.com/phpstan/phpstan-src"
             },
             "funding": [
                 {
@@ -5543,7 +5547,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-25T14:47:13+00:00"
+            "time": "2023-03-16T15:24:20+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -6223,16 +6227,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "0.15.19",
+            "version": "0.15.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "4b3a85382e890963a6d00e0ace8d09465f96e370"
+                "reference": "1cee8cc5d6d836e1bf9a3006d7b062adde3a6022"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/4b3a85382e890963a6d00e0ace8d09465f96e370",
-                "reference": "4b3a85382e890963a6d00e0ace8d09465f96e370",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/1cee8cc5d6d836e1bf9a3006d7b062adde3a6022",
+                "reference": "1cee8cc5d6d836e1bf9a3006d7b062adde3a6022",
                 "shasum": ""
             },
             "require": {
@@ -6264,9 +6268,15 @@
                 "MIT"
             ],
             "description": "Instant Upgrade and Automated Refactoring of any PHP code",
+            "keywords": [
+                "automation",
+                "dev",
+                "migration",
+                "refactoring"
+            ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/0.15.19"
+                "source": "https://github.com/rectorphp/rector/tree/0.15.21"
             },
             "funding": [
                 {
@@ -6274,7 +6284,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-02-28T10:47:53+00:00"
+            "time": "2023-03-06T11:44:29+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -7802,15 +7812,15 @@
     "aliases": [
         {
             "package": "validaide/common",
-            "version": "dev-chore/184007845_drop_php74",
-            "alias": "5.6.0",
-            "alias_normalized": "5.6.0.0"
+            "version": "dev-development",
+            "alias": "5.7.0",
+            "alias_normalized": "5.7.0.0"
         },
         {
             "package": "validaide/google-map",
-            "version": "dev-chore/184007858_drop_php74",
-            "alias": "5.6.0",
-            "alias_normalized": "5.6.0.0"
+            "version": "dev-development",
+            "alias": "5.7.0",
+            "alias_normalized": "5.7.0.0"
         }
     ],
     "minimum-stability": "stable",
