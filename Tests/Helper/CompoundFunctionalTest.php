@@ -9,29 +9,31 @@
  * file that was distributed with this source code.
  */
 
-namespace Ivory\GoogleMapBundle\Tests\Functional;
+namespace Ivory\GoogleMapBundle\Tests\Helper;
 
-use Ivory\GoogleMapBundle\Tests\Helper\HelperFactory;
+use Ivory\GoogleMap\Helper\ApiHelper;
+use Ivory\GoogleMap\Helper\MapHelper;
+use Ivory\GoogleMap\Helper\PlaceAutocompleteHelper;
 use Ivory\Tests\GoogleMap\Helper\Functional\CompoundFunctionalTest as BaseCompoundFunctionalTest;
 
 /**
  * @author GeLo <geloen.eric@gmail.com>
  *
- * @group functional
+ * @group  functional
  */
 class CompoundFunctionalTest extends BaseCompoundFunctionalTest
 {
-    protected function createApiHelper()
+    protected function createApiHelper(): ApiHelper
     {
         return HelperFactory::createApiHelper();
     }
 
-    protected function createMapHelper()
+    protected function createMapHelper(): MapHelper
     {
         return HelperFactory::createMapHelper();
     }
 
-    protected function createPlaceAutocompleteHelper()
+    protected function createPlaceAutocompleteHelper(): PlaceAutocompleteHelper
     {
         return HelperFactory::createPlaceAutocompleteHelper();
     }

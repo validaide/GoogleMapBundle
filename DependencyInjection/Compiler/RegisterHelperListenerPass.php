@@ -26,7 +26,7 @@ class RegisterHelperListenerPass implements CompilerPassInterface
     /**
      * @var string[]
      */
-    private static $helpers = [
+    private static array $helpers = [
         'api',
         'map',
         'map.static',

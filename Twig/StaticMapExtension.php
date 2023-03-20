@@ -21,14 +21,8 @@ use Twig\TwigFunction;
  */
 class StaticMapExtension extends AbstractExtension
 {
-    private StaticMapHelper $staticMapHelper;
-
-    /**
-     * @param StaticMapHelper $staticMapHelper
-     */
-    public function __construct(StaticMapHelper $staticMapHelper)
+    public function __construct(private readonly StaticMapHelper $staticMapHelper)
     {
-        $this->staticMapHelper = $staticMapHelper;
     }
 
     public function getFunctions()
@@ -43,8 +37,6 @@ class StaticMapExtension extends AbstractExtension
     }
 
     /**
-     * @param Map $map
-     *
      * @return string
      */
     public function render(Map $map)

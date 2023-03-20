@@ -28,7 +28,7 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
 {
     protected function loadInternal(array $config, ContainerBuilder $container)
     {
-        $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
 
         $resources = [
             'form',
@@ -42,7 +42,7 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
         ];
 
         foreach ($resources as $resource) {
-            $loader->load($resource.'.xml');
+            $loader->load($resource . '.xml');
         }
 
         $this->loadMapConfig($config['map'], $container);
@@ -50,10 +50,6 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
         $this->loadServicesConfig($config, $container, $loader);
     }
 
-    /**
-     * @param mixed[]          $config
-     * @param ContainerBuilder $container
-     */
     private function loadMapConfig(array $config, ContainerBuilder $container)
     {
         $container
@@ -73,10 +69,6 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
         }
     }
 
-    /**
-     * @param mixed[]          $config
-     * @param ContainerBuilder $container
-     */
     private function loadStaticMapConfig(array $config, ContainerBuilder $container)
     {
         if (isset($config['api_key'])) {
@@ -96,11 +88,6 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
         }
     }
 
-    /**
-     * @param mixed[]          $config
-     * @param ContainerBuilder $container
-     * @param LoaderInterface  $loader
-     */
     private function loadServicesConfig(array $config, ContainerBuilder $container, LoaderInterface $loader)
     {
         $services = [
@@ -122,22 +109,16 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
         }
     }
 
-    /**
-     * @param string           $service
-     * @param mixed[]          $config
-     * @param ContainerBuilder $container
-     * @param LoaderInterface  $loader
-     * @param bool             $http
-     */
     private function loadServiceConfig(
-        $service,
+        string $service,
         array $config,
         ContainerBuilder $container,
         LoaderInterface $loader,
-        $http = true
-    ) {
-        $loader->load('service/'.$service.'.xml');
-        $definition = $container->getDefinition($serviceName = 'ivory.google_map.'.$service);
+        bool $http = true
+    )
+    {
+        $loader->load('service/' . $service . '.xml');
+        $definition = $container->getDefinition($serviceName = 'ivory.google_map.' . $service);
 
         if ($http) {
             $definition
@@ -158,7 +139,7 @@ class IvoryGoogleMapExtension extends ConfigurableExtension
             $businessAccountConfig = $config['business_account'];
 
             $container->setDefinition(
-                $businessAccountName = $serviceName.'.business_account',
+                $businessAccountName = $serviceName . '.business_account',
                 new Definition(BusinessAccount::class, [
                     $businessAccountConfig['client_id'],
                     $businessAccountConfig['secret'],

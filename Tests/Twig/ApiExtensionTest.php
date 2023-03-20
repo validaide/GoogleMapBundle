@@ -25,7 +25,7 @@ class ApiExtensionTest extends AbstractExtensionTest
     /**
      * @var ApiHelper|MockObject|null
      */
-    private $apiHelper;
+    private ApiHelper|MockObject|null $apiHelper = null;
 
     protected function createExtension(): AbstractExtension
     {
@@ -47,10 +47,7 @@ class ApiExtensionTest extends AbstractExtensionTest
         $this->assertSame($result, $template->render(['object' => $object]));
     }
 
-    /**
-     * @return MockObject|ApiHelper
-     */
-    private function createApiHelperMock()
+    private function createApiHelperMock(): MockObject|ApiHelper
     {
         return $this->createMock(ApiHelper::class);
     }

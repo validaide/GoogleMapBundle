@@ -24,10 +24,7 @@ class ApiHelperTest extends TestCase
 {
     private ApiHelper $apiHelper;
 
-    /**
-     * @var BaseApiHelper|MockObject
-     */
-    private $innerApiHelper;
+    private BaseApiHelper|MockObject $innerApiHelper;
 
     protected function setUp(): void
     {
@@ -51,10 +48,7 @@ class ApiHelperTest extends TestCase
         $this->assertSame('ivory_google_api', $this->apiHelper->getName());
     }
 
-    /**
-     * @return MockObject|BaseApiHelper
-     */
-    private function createApiHelperMock()
+    private function createApiHelperMock(): MockObject|BaseApiHelper
     {
         return $this->createMock(BaseApiHelper::class);
     }

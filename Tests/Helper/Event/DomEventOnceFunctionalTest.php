@@ -11,6 +11,8 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Helper\Event;
 
+use Ivory\GoogleMap\Helper\ApiHelper;
+use Ivory\GoogleMap\Helper\MapHelper;
 use Ivory\GoogleMapBundle\Tests\Helper\HelperFactory;
 use Ivory\Tests\GoogleMap\Helper\Functional\Event\DomEventOnceFunctionalTest as BaseDomEventOnceFunctionalTest;
 
@@ -21,12 +23,12 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Event\DomEventOnceFunctionalTest as 
  */
 class DomEventOnceFunctionalTest extends BaseDomEventOnceFunctionalTest
 {
-    protected function createApiHelper()
+    protected function createApiHelper(): ApiHelper
     {
         return HelperFactory::createApiHelper();
     }
 
-    protected function createMapHelper()
+    protected function createMapHelper(): MapHelper
     {
         return HelperFactory::createMapHelper();
     }

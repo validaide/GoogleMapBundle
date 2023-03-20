@@ -11,22 +11,24 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Helper\Place;
 
+use Ivory\GoogleMap\Helper\ApiHelper;
+use Ivory\GoogleMap\Helper\PlaceAutocompleteHelper;
 use Ivory\GoogleMapBundle\Tests\Helper\HelperFactory;
 use Ivory\Tests\GoogleMap\Helper\Functional\Place\AutocompleteFunctionalTest as BaseAutocompleteFunctionalTest;
 
 /**
  * @author GeLo <geloen.eric@gmail.com>
  *
- * @group functional
+ * @group  functional
  */
 class AutocompleteFunctionalTest extends BaseAutocompleteFunctionalTest
 {
-    protected function createApiHelper()
+    protected function createApiHelper(): ApiHelper
     {
         return HelperFactory::createApiHelper();
     }
 
-    protected function createPlaceAutocompleteHelper()
+    protected function createPlaceAutocompleteHelper(): PlaceAutocompleteHelper
     {
         return HelperFactory::createPlaceAutocompleteHelper();
     }
