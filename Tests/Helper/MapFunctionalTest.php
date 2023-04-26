@@ -11,6 +11,8 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Helper;
 
+use Ivory\GoogleMap\Helper\ApiHelper;
+use Ivory\GoogleMap\Helper\MapHelper;
 use Ivory\Tests\GoogleMap\Helper\Functional\MapFunctionalTest as BaseMapFunctionalTest;
 
 /**
@@ -20,12 +22,12 @@ use Ivory\Tests\GoogleMap\Helper\Functional\MapFunctionalTest as BaseMapFunction
  */
 class MapFunctionalTest extends BaseMapFunctionalTest
 {
-    protected function createApiHelper()
+    protected function createApiHelper(): ApiHelper
     {
         return HelperFactory::createApiHelper();
     }
 
-    protected function createMapHelper()
+    protected function createMapHelper(): MapHelper
     {
         return HelperFactory::createMapHelper();
     }

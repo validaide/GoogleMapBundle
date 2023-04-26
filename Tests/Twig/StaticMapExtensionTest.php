@@ -25,7 +25,7 @@ class StaticMapExtensionTest extends AbstractExtensionTest
     /**
      * @var StaticMapHelper|MockObject|null
      */
-    private $staticMapHelper;
+    private StaticMapHelper|MockObject|null $staticMapHelper = null;
 
     protected function createExtension(): AbstractExtension
     {
@@ -47,18 +47,12 @@ class StaticMapExtensionTest extends AbstractExtensionTest
         $this->assertSame($result, $template->render(['map' => $map]));
     }
 
-    /**
-     * @return MockObject|StaticMapHelper
-     */
-    private function createStaticMapHelperMock()
+    private function createStaticMapHelperMock(): MockObject|StaticMapHelper
     {
         return $this->createMock(StaticMapHelper::class);
     }
 
-    /**
-     * @return MockObject|Map
-     */
-    private function createMapMock()
+    private function createMapMock(): MockObject|Map
     {
         return $this->createMock(Map::class);
     }
