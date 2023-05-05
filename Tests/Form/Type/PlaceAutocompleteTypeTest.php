@@ -111,9 +111,7 @@ class PlaceAutocompleteTypeTest extends TestCase
     }
 
     /**
-     * @param mixed   $data
      * @param mixed[] $options
-     *
      * @return FormInterface
      */
     private function createForm($data = null, array $options = []): FormInterface
@@ -125,10 +123,7 @@ class PlaceAutocompleteTypeTest extends TestCase
         );
     }
 
-    /**
-     * @return MockObject|Bound
-     */
-    private function createBoundMock()
+    private function createBoundMock(): MockObject|Bound
     {
         return $this->createMock(Bound::class);
     }

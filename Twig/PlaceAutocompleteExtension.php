@@ -10,11 +10,8 @@ use Twig\TwigFunction;
 
 class PlaceAutocompleteExtension extends AbstractExtension
 {
-    private PlaceAutocompleteHelper $placeAutocompleteHelper;
-
-    public function __construct(PlaceAutocompleteHelper $placeAutocompleteHelper)
+    public function __construct(private readonly PlaceAutocompleteHelper $placeAutocompleteHelper)
     {
-        $this->placeAutocompleteHelper = $placeAutocompleteHelper;
     }
 
     public function getFunctions(): array
@@ -40,6 +37,7 @@ class PlaceAutocompleteExtension extends AbstractExtension
 
     /**
      * @param string[]     $attributes
+     * @return string
      */
     public function renderHtml(Autocomplete $autocomplete, array $attributes = []): string
     {

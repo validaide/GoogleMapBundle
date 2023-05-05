@@ -3,20 +3,17 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Templating;
 
-use PHPUnit\Framework\MockObject\MockObject;
 use Ivory\GoogleMap\Helper\StaticMapHelper as BaseStaticMapHelper;
 use Ivory\GoogleMap\Map;
 use Ivory\GoogleMapBundle\Templating\StaticMapHelper;
+use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 class StaticMapHelperTest extends TestCase
 {
     private StaticMapHelper $staticMapHelper;
 
-    /**
-     * @var BaseStaticMapHelper|MockObject
-     */
-    private $innerStaticMapHelper;
+    private BaseStaticMapHelper|MockObject $innerStaticMapHelper;
 
     protected function setUp(): void
     {
@@ -40,18 +37,16 @@ class StaticMapHelperTest extends TestCase
         $this->assertSame('ivory_google_map_static', $this->staticMapHelper->getName());
     }
 
-    /**
-     * @return MockObject|BaseStaticMapHelper
-     */
-    private function createStaticMapHelperMock()
+    /*****************************************************************************/
+    /* Helpers
+    /*****************************************************************************/
+
+    private function createStaticMapHelperMock(): MockObject|BaseStaticMapHelper
     {
         return $this->createMock(BaseStaticMapHelper::class);
     }
 
-    /**
-     * @return MockObject|Map
-     */
-    private function createMapMock()
+    private function createMapMock(): MockObject|Map
     {
         return $this->createMock(Map::class);
     }

@@ -10,11 +10,8 @@ use Twig\TwigFunction;
 
 class StaticMapExtension extends AbstractExtension
 {
-    private StaticMapHelper $staticMapHelper;
-
-    public function __construct(StaticMapHelper $staticMapHelper)
+    public function __construct(private readonly StaticMapHelper $staticMapHelper)
     {
-        $this->staticMapHelper = $staticMapHelper;
     }
 
     public function getFunctions(): array
@@ -28,7 +25,10 @@ class StaticMapExtension extends AbstractExtension
         return $functions;
     }
 
-    public function render(Map $map): string
+    /**
+     * @return string
+     */
+    public function render(Map $map)
     {
         return $this->staticMapHelper->render($map);
     }

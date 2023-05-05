@@ -13,10 +13,7 @@ class PlaceAutocompleteHelperTest extends TestCase
 {
     private PlaceAutocompleteHelper $placeAutocompleteHelper;
 
-    /**
-     * @var BasePlaceAutocompleteHelper|MockObject
-     */
-    private $innerPlaceAutocompleteHelper;
+    private BasePlaceAutocompleteHelper|MockObject $innerPlaceAutocompleteHelper;
 
     protected function setUp(): void
     {
@@ -62,18 +59,12 @@ class PlaceAutocompleteHelperTest extends TestCase
         $this->assertSame('ivory_google_place_autocomplete', $this->placeAutocompleteHelper->getName());
     }
 
-    /**
-     * @return MockObject|BasePlaceAutocompleteHelper
-     */
-    private function createPlaceAutocompleteHelperMock()
+    private function createPlaceAutocompleteHelperMock(): MockObject|BasePlaceAutocompleteHelper
     {
         return $this->createMock(BasePlaceAutocompleteHelper::class);
     }
 
-    /**
-     * @return MockObject|Autocomplete
-     */
-    private function createAutocompleteMock()
+    private function createAutocompleteMock(): MockObject|Autocomplete
     {
         return $this->createMock(Autocomplete::class);
     }

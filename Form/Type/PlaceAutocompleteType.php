@@ -84,7 +84,7 @@ class PlaceAutocompleteType extends AbstractType
             ->addAllowedTypes('api', 'bool');
     }
 
-    public function getParent(): ?string
+    public function getParent(): string
     {
         return method_exists(AbstractType::class, 'getBlockPrefix') ? TextType::class : 'text';
     }
@@ -94,7 +94,7 @@ class PlaceAutocompleteType extends AbstractType
         return 'place_autocomplete';
     }
 
-    public function getName()
+    public function getName(): string
     {
         return $this->getBlockPrefix();
     }

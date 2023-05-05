@@ -17,11 +17,8 @@ use Twig\TwigFunction;
 
 class ApiExtension extends AbstractExtension
 {
-    private ApiHelper $apiHelper;
-
-    public function __construct(ApiHelper $apiHelper)
+    public function __construct(private readonly ApiHelper $apiHelper)
     {
-        $this->apiHelper = $apiHelper;
     }
 
     public function getFunctions(): array

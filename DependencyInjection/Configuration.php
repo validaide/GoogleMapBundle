@@ -110,9 +110,6 @@ class Configuration implements ConfigurationInterface
         return $node;
     }
 
-    /**
-     * @return ArrayNodeDefinition|NodeDefinition
-     */
     private function createNode(string $name, string $type = 'array'): NodeDefinition
     {
         $treeBuilder = new TreeBuilder($name, $type);

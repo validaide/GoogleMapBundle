@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Ivory\GoogleMap\Tests\Helper\Event;
+namespace Ivory\GoogleMapBundle\Tests\Helper\Event;
 
 use Ivory\GoogleMap\Helper\MapHelper;
 use Ivory\GoogleMap\Helper\ApiHelper;

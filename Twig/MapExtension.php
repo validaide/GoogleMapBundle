@@ -10,11 +10,8 @@ use Twig\TwigFunction;
 
 class MapExtension extends AbstractExtension
 {
-    private MapHelper $mapHelper;
-
-    public function __construct(MapHelper $mapHelper)
+    public function __construct(private readonly MapHelper $mapHelper)
     {
-        $this->mapHelper = $mapHelper;
     }
 
     public function getFunctions(): array

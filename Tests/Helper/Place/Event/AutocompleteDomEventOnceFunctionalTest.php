@@ -19,7 +19,7 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Place\Event\AutocompleteDomEventOnce
 /**
  * @author GeLo <geloen.eric@gmail.com>
  *
- * @group functional
+ * @group  functional
  */
 class AutocompleteDomEventOnceFunctionalTest extends BaseAutocompleteDomEventOnceFunctionalTest
 {

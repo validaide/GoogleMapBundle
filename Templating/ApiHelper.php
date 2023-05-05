@@ -8,17 +8,8 @@ use Symfony\Component\Templating\Helper\Helper;
 
 class ApiHelper extends Helper
 {
-    /**
-     * @var BaseApiHelper
-     */
-    private BaseApiHelper $apiHelper;
-
-    /**
-     * @param BaseApiHelper $apiHelper
-     */
-    public function __construct(BaseApiHelper $apiHelper)
+    public function __construct(private readonly BaseApiHelper $apiHelper)
     {
-        $this->apiHelper = $apiHelper;
     }
 
     /**

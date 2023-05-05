@@ -40,7 +40,7 @@ abstract class AbstractIvoryGoogleMapExtensionTest extends TestCase
     /**
      * @var HttpClient|MockObject|null
      */
-    private $client;
+    private HttpClient|MockObject|null $client = null;
 
     /**
      * @var MessageFactory|MockObject
@@ -50,7 +50,7 @@ abstract class AbstractIvoryGoogleMapExtensionTest extends TestCase
     /**
      * @var MockObject|SerializerInterface|null
      */
-    private $serializer;
+    private MockObject|SerializerInterface|null $serializer = null;
 
     protected function setUp(): void
     {
@@ -788,26 +788,17 @@ abstract class AbstractIvoryGoogleMapExtensionTest extends TestCase
         $this->container->compile();
     }
 
-    /**
-     * @return MockObject|HttpClient
-     */
-    private function createClientMock()
+    private function createClientMock(): MockObject|HttpClient
     {
         return $this->createMock(HttpClient::class);
     }
 
-    /**
-     * @return MockObject|MessageFactory
-     */
-    private function createMessageFactoryMock()
+    private function createMessageFactoryMock(): MockObject|MessageFactory
     {
         return $this->createMock(MessageFactory::class);
     }
 
-    /**
-     * @return MockObject|SerializerInterface
-     */
-    private function createSerializerMock()
+    private function createSerializerMock(): MockObject|SerializerInterface
     {
         return $this->createMock(SerializerInterface::class);
     }

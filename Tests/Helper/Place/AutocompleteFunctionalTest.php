@@ -19,7 +19,7 @@ use Ivory\Tests\GoogleMap\Helper\Functional\Place\AutocompleteFunctionalTest as 
 /**
  * @author GeLo <geloen.eric@gmail.com>
  *
- * @group functional
+ * @group  functional
  */
 class AutocompleteFunctionalTest extends BaseAutocompleteFunctionalTest
 {

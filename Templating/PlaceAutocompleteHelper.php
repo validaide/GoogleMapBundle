@@ -9,24 +9,12 @@ use Symfony\Component\Templating\Helper\Helper;
 
 class PlaceAutocompleteHelper extends Helper
 {
-    /**
-     * @var BasePlaceAutocompleteHelper
-     */
-    private BasePlaceAutocompleteHelper $placeAutocompleteHelper;
-
-    /**
-     * @param BasePlaceAutocompleteHelper $placeAutocompleteHelper
-     */
-    public function __construct(BasePlaceAutocompleteHelper $placeAutocompleteHelper)
+    public function __construct(private readonly BasePlaceAutocompleteHelper $placeAutocompleteHelper)
     {
-        $this->placeAutocompleteHelper = $placeAutocompleteHelper;
     }
 
     /**
-     * @param Autocomplete $autocomplete
-     * @param string[]     $attributes
-     *
-     * @return string
+     * @param string[] $attributes
      */
     public function render(Autocomplete $autocomplete, array $attributes = []): string
     {
@@ -36,10 +24,7 @@ class PlaceAutocompleteHelper extends Helper
     }
 
     /**
-     * @param Autocomplete $autocomplete
-     * @param string[]     $attributes
-     *
-     * @return string
+     * @param string[] $attributes
      */
     public function renderHtml(Autocomplete $autocomplete, array $attributes = []): string
     {

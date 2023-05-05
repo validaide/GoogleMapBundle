@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Ivory\GoogleMapBundle\Tests\Functional;
+namespace Ivory\GoogleMapBundle\Tests\Helper;
 
 use Ivory\GoogleMap\Helper\PlaceAutocompleteHelper;
 use Ivory\GoogleMap\Helper\MapHelper;
@@ -20,7 +20,7 @@ use Ivory\Tests\GoogleMap\Helper\Functional\CompoundFunctionalTest as BaseCompou
 /**
  * @author GeLo <geloen.eric@gmail.com>
  *
- * @group functional
+ * @group  functional
  */
 class CompoundFunctionalTest extends BaseCompoundFunctionalTest
 {

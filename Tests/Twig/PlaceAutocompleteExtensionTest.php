@@ -14,7 +14,7 @@ class PlaceAutocompleteExtensionTest extends AbstractExtensionTest
     /**
      * @var PlaceAutocompleteHelper|MockObject|null
      */
-    private $placeAutocompleteHelper;
+    private PlaceAutocompleteHelper|MockObject|null $placeAutocompleteHelper = null;
 
     protected function createExtension(): AbstractExtension
     {
@@ -62,18 +62,12 @@ class PlaceAutocompleteExtensionTest extends AbstractExtensionTest
         $this->assertSame($result, $template->render(['autocomplete' => $autocomplete]));
     }
 
-    /**
-     * @return MockObject|PlaceAutocompleteHelper
-     */
-    private function createPlaceAutocompleteHelperMock()
+    private function createPlaceAutocompleteHelperMock(): MockObject|PlaceAutocompleteHelper
     {
         return $this->createMock(PlaceAutocompleteHelper::class);
     }
 
-    /**
-     * @return MockObject|Autocomplete
-     */
-    private function createAutocompleteMock()
+    private function createAutocompleteMock(): MockObject|Autocomplete
     {
         return $this->createMock(Autocomplete::class);
     }
