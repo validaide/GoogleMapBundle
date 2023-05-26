@@ -23,10 +23,10 @@
     ],
     "require": {
         "php": "^8.1",
-        "symfony/framework-bundle": "^4.4",
-        "symfony/serializer": "^4.4",
-        "validaide/common": "5.8.*",
-        "validaide/google-map": "5.8.*"
+        "symfony/framework-bundle": "^5.4",
+        "symfony/serializer": "^5.4",
+        "validaide/common": "dev-chore/184011118_symfony5 as 5.8.0",
+        "validaide/google-map": "dev-chore/184011201_symfony5 as 5.8.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2",
@@ -36,11 +36,11 @@
         "phpunit/phpunit": "^8.0",
         "phpunit/phpunit-selenium": "8.*",
         "rector/rector": "^0.15.0",
-        "symfony/cache": "^4.4",
-        "symfony/form": "^4.4",
-        "symfony/phpunit-bridge": "^4.4",
-        "symfony/templating": "^4.4",
-        "symfony/yaml": "^4.4",
+        "symfony/cache": "^5.4",
+        "symfony/form": "^5.4",
+        "symfony/phpunit-bridge": "^5.4",
+        "symfony/templating": "^5.4",
+        "symfony/yaml": "^5.4",
         "twig/twig": "^3.0.4"
     },
     "repositories": [
