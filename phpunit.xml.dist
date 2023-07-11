@@ -16,7 +16,7 @@
         <server name="SELENIUM_HOST" value="selenium" />
         <server name="CACHE_PATH" value="tests/.cache" />
         <server name="CACHE_RESET" value="false" />
-<!--        <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak"/>-->
+        <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak"/>
     </php>
     <filter>
         <whitelist>
