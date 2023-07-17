@@ -11,8 +11,8 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Helper;
 
-use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\GoogleMap\Helper\MapHelper;
+use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\Tests\GoogleMap\Helper\Functional\MapFunctionalTest as BaseMapFunctionalTest;
 
 /**

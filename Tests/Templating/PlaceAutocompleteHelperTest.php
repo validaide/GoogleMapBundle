@@ -1,13 +1,5 @@
 <?php
 
-/*
- * This file is part of the Ivory Google Map bundle package.
- *
- * (c) Eric GELOEN <geloen.eric@gmail.com>
- *
- * For the full copyright and license information, please read the LICENSE
- * file that was distributed with this source code.
- */
 
 namespace Ivory\GoogleMapBundle\Tests\Templating;
 
@@ -17,9 +9,6 @@ use Ivory\GoogleMap\Place\Autocomplete;
 use Ivory\GoogleMapBundle\Templating\PlaceAutocompleteHelper;
 use PHPUnit\Framework\TestCase;
 
-/**
- * @author GeLo <geloen.eric@gmail.com>
- */
 class PlaceAutocompleteHelperTest extends TestCase
 {
     private PlaceAutocompleteHelper $placeAutocompleteHelper;

@@ -11,9 +11,10 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Helper;
 
-use Ivory\GoogleMap\Helper\ApiHelper;
-use Ivory\GoogleMap\Helper\MapHelper;
 use Ivory\GoogleMap\Helper\PlaceAutocompleteHelper;
+use Ivory\GoogleMap\Helper\MapHelper;
+use Ivory\GoogleMap\Helper\ApiHelper;
+use Ivory\GoogleMapBundle\Tests\Helper\HelperFactory;
 use Ivory\Tests\GoogleMap\Helper\Functional\CompoundFunctionalTest as BaseCompoundFunctionalTest;
 
 /**

@@ -1,13 +1,5 @@
 <?php
 
-/*
- * This file is part of the Ivory Google Map bundle package.
- *
- * (c) Eric GELOEN <geloen.eric@gmail.com>
- *
- * For the full copyright and license information, please read the LICENSE
- * file that was distributed with this source code.
- */
 
 namespace Ivory\GoogleMapBundle\Twig;
 
@@ -16,16 +8,13 @@ use Ivory\GoogleMap\Place\Autocomplete;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
-/**
- * @author GeLo <geloen.eric@gmail.com>
- */
 class PlaceAutocompleteExtension extends AbstractExtension
 {
     public function __construct(private readonly PlaceAutocompleteHelper $placeAutocompleteHelper)
     {
     }
 
-    public function getFunctions()
+    public function getFunctions(): array
     {
         $functions = [];
 
@@ -38,9 +27,8 @@ class PlaceAutocompleteExtension extends AbstractExtension
 
     /**
      * @param string[]     $attributes
-     * @return string
      */
-    public function render(Autocomplete $autocomplete, array $attributes = [])
+    public function render(Autocomplete $autocomplete, array $attributes = []): string
     {
         $autocomplete->addInputAttributes($attributes);
 
@@ -51,22 +39,19 @@ class PlaceAutocompleteExtension extends AbstractExtension
      * @param string[]     $attributes
      * @return string
      */
-    public function renderHtml(Autocomplete $autocomplete, array $attributes = [])
+    public function renderHtml(Autocomplete $autocomplete, array $attributes = []): string
     {
         $autocomplete->addInputAttributes($attributes);
 
         return $this->placeAutocompleteHelper->renderHtml($autocomplete);
     }
 
-    /**
-     * @return string
-     */
-    public function renderJavascript(Autocomplete $autocomplete)
+    public function renderJavascript(Autocomplete $autocomplete): string
     {
         return $this->placeAutocompleteHelper->renderJavascript($autocomplete);
     }
 
-    public function getName()
+    public function getName(): string
     {
         return 'ivory_google_place_autocomplete';
     }
@@ -74,7 +59,7 @@ class PlaceAutocompleteExtension extends AbstractExtension
     /**
      * @return string[]
      */
-    private function getMapping()
+    private function getMapping(): array
     {
         return [
             'ivory_google_place_autocomplete'           => 'render',

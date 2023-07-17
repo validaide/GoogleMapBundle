@@ -1,13 +1,5 @@
 <?php
 
-/*
- * This file is part of the Ivory Google Map bundle package.
- *
- * (c) Eric GELOEN <geloen.eric@gmail.com>
- *
- * For the full copyright and license information, please read the LICENSE
- * file that was distributed with this source code.
- */
 
 namespace Ivory\GoogleMapBundle\Twig;
 
@@ -16,16 +8,13 @@ use Ivory\GoogleMap\Map;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
-/**
- * @author GeLo <geloen.eric@gmail.com>
- */
 class StaticMapExtension extends AbstractExtension
 {
     public function __construct(private readonly StaticMapHelper $staticMapHelper)
     {
     }
 
-    public function getFunctions()
+    public function getFunctions(): array
     {
         $functions = [];
 
@@ -44,7 +33,7 @@ class StaticMapExtension extends AbstractExtension
         return $this->staticMapHelper->render($map);
     }
 
-    public function getName()
+    public function getName(): string
     {
         return 'ivory_google_map_static';
     }
@@ -52,7 +41,7 @@ class StaticMapExtension extends AbstractExtension
     /**
      * @return string[]
      */
-    private function getMapping()
+    private function getMapping(): array
     {
         return ['ivory_google_map_static' => 'render'];
     }
