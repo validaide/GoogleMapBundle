@@ -11,8 +11,8 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Helper\Event;
 
-use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\GoogleMap\Helper\MapHelper;
+use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\GoogleMapBundle\Tests\Helper\HelperFactory;
 use Ivory\Tests\GoogleMap\Helper\Functional\Event\EventOnceFunctionalTest as BaseEventOnceFunctionalTest;
 

@@ -11,8 +11,8 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Helper\Place\Event;
 
-use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\GoogleMap\Helper\PlaceAutocompleteHelper;
+use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\GoogleMapBundle\Tests\Helper\HelperFactory;
 use Ivory\Tests\GoogleMap\Helper\Functional\Place\Event\AutocompleteDomEventFunctionalTest as BaseAutocompleteDomEventFunctionalTest;
 

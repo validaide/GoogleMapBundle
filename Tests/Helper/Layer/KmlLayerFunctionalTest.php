@@ -11,8 +11,8 @@
 
 namespace Ivory\GoogleMapBundle\Tests\Helper\Layer;
 
-use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\GoogleMap\Helper\MapHelper;
+use Ivory\GoogleMap\Helper\ApiHelper;
 use Ivory\GoogleMapBundle\Tests\Helper\HelperFactory;
 use Ivory\Tests\GoogleMap\Helper\Functional\Layer\KmlLayerFunctionalTest as BaseKmlLayerFunctionalTest;
 

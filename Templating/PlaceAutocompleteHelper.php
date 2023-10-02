@@ -1,13 +1,5 @@
 <?php
 
-/*
- * This file is part of the Ivory Google Map bundle package.
- *
- * (c) Eric GELOEN <geloen.eric@gmail.com>
- *
- * For the full copyright and license information, please read the LICENSE
- * file that was distributed with this source code.
- */
 
 namespace Ivory\GoogleMapBundle\Templating;
 
@@ -15,9 +7,6 @@ use Ivory\GoogleMap\Helper\PlaceAutocompleteHelper as BasePlaceAutocompleteHelpe
 use Ivory\GoogleMap\Place\Autocomplete;
 use Symfony\Component\Templating\Helper\Helper;
 
-/**
- * @author GeLo <geloen.eric@gmail.com>
- */
 class PlaceAutocompleteHelper extends Helper
 {
     public function __construct(private readonly BasePlaceAutocompleteHelper $placeAutocompleteHelper)
@@ -44,6 +33,11 @@ class PlaceAutocompleteHelper extends Helper
         return $this->placeAutocompleteHelper->renderHtml($autocomplete);
     }
 
+    /**
+     * @param Autocomplete $autocomplete
+     *
+     * @return string
+     */
     public function renderJavascript(Autocomplete $autocomplete): string
     {
         return $this->placeAutocompleteHelper->renderJavascript($autocomplete);
