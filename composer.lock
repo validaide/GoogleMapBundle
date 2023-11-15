@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f20e1be652953459bd9e0563f1bca659",
+    "content-hash": "4179a8fb3e8862787e6fb978cf4322d8",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -7731,8 +7731,8 @@
         {
             "package": "validaide/google-map",
             "version": "dev-chore/186300685_width_and_height_optional",
-            "alias": "6.1.0",
-            "alias_normalized": "6.1.0.0"
+            "alias": "6.0.0",
+            "alias_normalized": "6.0.0.0"
         }
     ],
     "minimum-stability": "stable",
