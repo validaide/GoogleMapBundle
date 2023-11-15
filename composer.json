@@ -26,7 +26,7 @@
         "symfony/framework-bundle": "^5.4",
         "symfony/serializer": "^5.4",
         "validaide/common": "6.0.*",
-        "validaide/google-map": "dev-chore/186300685_width_and_height_optional as 6.1.0"
+        "validaide/google-map": "dev-chore/186300685_width_and_height_optional as 6.0.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2",
