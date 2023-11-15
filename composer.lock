@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "17846cde17f5f13da3ef614e9ca0a049",
+    "content-hash": "f20e1be652953459bd9e0563f1bca659",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -3822,16 +3822,16 @@
         },
         {
             "name": "validaide/google-map",
-            "version": "6.0.0",
+            "version": "dev-chore/186300685_width_and_height_optional",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "9ec267999cce167b2b39319a4d6fcf6fecd524df"
+                "reference": "9dcd3565016248d4113f510e3d99b2e5099f2ab8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/9ec267999cce167b2b39319a4d6fcf6fecd524df",
-                "reference": "9ec267999cce167b2b39319a4d6fcf6fecd524df",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/9dcd3565016248d4113f510e3d99b2e5099f2ab8",
+                "reference": "9dcd3565016248d4113f510e3d99b2e5099f2ab8",
                 "shasum": ""
             },
             "require": {
@@ -3888,7 +3888,7 @@
                 "map",
                 "validaide"
             ],
-            "time": "2023-10-02T11:10:30+00:00"
+            "time": "2023-11-15T11:49:50+00:00"
         }
     ],
     "packages-dev": [
@@ -7727,9 +7727,18 @@
             "time": "2023-06-08T12:52:13+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "validaide/google-map",
+            "version": "dev-chore/186300685_width_and_height_optional",
+            "alias": "6.1.0",
+            "alias_normalized": "6.1.0.0"
+        }
+    ],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "validaide/google-map": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
