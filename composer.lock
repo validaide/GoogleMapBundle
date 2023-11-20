@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94ab8ef428456bcf27d13ddae9a3e2ec",
+    "content-hash": "eecaa23fe75062ee6941e3d7f4e1bec2",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -3822,16 +3822,16 @@
         },
         {
             "name": "validaide/google-map",
-            "version": "dev-development",
+            "version": "6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/validaide/google-map.git",
-                "reference": "64e5b1e13b872279e85bb8f3f7712dc0a6629896"
+                "reference": "5279f476a46a945e33f9d2809bf9aa354c35205a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/validaide/google-map/zipball/64e5b1e13b872279e85bb8f3f7712dc0a6629896",
-                "reference": "64e5b1e13b872279e85bb8f3f7712dc0a6629896",
+                "url": "https://api.github.com/repos/validaide/google-map/zipball/5279f476a46a945e33f9d2809bf9aa354c35205a",
+                "reference": "5279f476a46a945e33f9d2809bf9aa354c35205a",
                 "shasum": ""
             },
             "require": {
@@ -3888,7 +3888,7 @@
                 "map",
                 "validaide"
             ],
-            "time": "2023-11-20T14:04:25+00:00"
+            "time": "2023-11-17T12:23:39+00:00"
         }
     ],
     "packages-dev": [
@@ -7727,18 +7727,9 @@
             "time": "2023-06-08T12:52:13+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "validaide/google-map",
-            "version": "dev-development",
-            "alias": "6.1.0",
-            "alias_normalized": "6.1.0.0"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "validaide/google-map": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
