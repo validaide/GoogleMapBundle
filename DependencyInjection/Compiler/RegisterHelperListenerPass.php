@@ -2,18 +2,14 @@
 
 namespace Ivory\GoogleMapBundle\DependencyInjection\Compiler;
 
+use InvalidArgumentException;
 use Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
-use Symfony\Component\EventDispatcher\DependencyInjection\RegisterListenersPass;
-use Symfony\Component\EventDispatcher\EventDispatcher;
 
 class RegisterHelperListenerPass implements CompilerPassInterface
 {
-    /**
-     * @var string[]
-     */
     private static array $helpers = [
         'api',
         'map',
@@ -21,35 +17,43 @@ class RegisterHelperListenerPass implements CompilerPassInterface
         'place_autocomplete',
     ];
 
-    /**
-     * @var RegisterListenersPass[]
-     */
-    private array $passes = [];
-
-    public function __construct()
+    public function process(ContainerBuilder $container): void
     {
         foreach (self::$helpers as $helper) {
-            $this->passes[] = new RegisterListenersPass(
-                'ivory.google_map.helper.' . $helper . '.event_dispatcher',
-                'ivory.google_map.helper.' . $helper . '.listener',
-                'ivory.google_map.helper.' . $helper . '.subscriber'
-            );
-        }
-    }
+            $dispatcherId  = 'ivory.google_map.helper.' . $helper . '.event_dispatcher';
+            $listenerTag   = 'ivory.google_map.helper.' . $helper . '.listener';
+            $subscriberTag = 'ivory.google_map.helper.' . $helper . '.subscriber';
 
-    public function process(ContainerBuilder $container)
-    {
-        if (!class_exists(ServiceClosureArgument::class)) {
-            foreach (self::$helpers as $helper) {
-                $container
-                    ->getDefinition('ivory.google_map.helper.' . $helper . '.event_dispatcher')
-                    ->setClass(EventDispatcher::class)
-                    ->addArgument(new Reference('service_container'));
+            if (!$container->hasDefinition($dispatcherId)) {
+                continue;
             }
-        }
 
-        foreach ($this->passes as $pass) {
-            $pass->process($container);
+            $dispatcherDefinition = $container->getDefinition($dispatcherId);
+
+            foreach ($container->findTaggedServiceIds($listenerTag) as $id => $tags) {
+                foreach ($tags as $attributes) {
+                    $method = $attributes['method'] ?? '__invoke';
+                    $event  = $attributes['event'] ?? null;
+
+                    if (null === $event) {
+                        throw new InvalidArgumentException(sprintf('The service "%s" must define the "event" attribute on "%s" tags.', $id, $listenerTag));
+                    }
+
+                    $priority = $attributes['priority'] ?? 0;
+
+                    $dispatcherDefinition->addMethodCall('addListener', [
+                        $event,
+                        [new ServiceClosureArgument(new Reference($id)), $method],
+                        $priority,
+                    ]);
+                }
+            }
+
+            foreach ($container->findTaggedServiceIds($subscriberTag) as $id => $tags) {
+                $dispatcherDefinition->addMethodCall('addSubscriber', [
+                    new Reference($id),
+                ]);
+            }
         }
     }
 }
