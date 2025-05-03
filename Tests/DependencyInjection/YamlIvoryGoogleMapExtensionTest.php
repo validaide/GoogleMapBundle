@@ -9,9 +9,9 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 class YamlIvoryGoogleMapExtensionTest extends AbstractIvoryGoogleMapExtensionTest
 {
-    protected function loadConfiguration(ContainerBuilder $container, $configuration)
+    protected function loadConfiguration(ContainerBuilder $container, $configuration): void
     {
-        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Fixtures/Config/Yaml'));
-        $loader->load($configuration.'.yml');
+        $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Fixtures/Config/Yaml'));
+        $loader->load($configuration . '.yml');
     }
 }
