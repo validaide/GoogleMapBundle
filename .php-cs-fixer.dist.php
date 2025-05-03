@@ -9,6 +9,4 @@ return (new PhpCsFixer\Config())
         '@PSR12'                => true,
         'method_argument_space' => ['on_multiline' => 'ignore'],
     ])
-    ->setFinder($finder)
-    ->setCacheFile('.php-cs-fixer.cache') // forward compatibility with 3.x line
-    ;
+    ->setFinder($finder);
