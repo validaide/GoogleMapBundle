@@ -35,7 +35,7 @@
     "symfony/flex"                : "^2.5",
     "symfony/http-kernel"         : "*",
     "symfony/serializer"          : "*",
-    "validaide/google-map"        : "dev-VAL-2776-spike-investigate-the-steps-need-to-upgrade-to-symfony-6 as 7.6"
+    "validaide/google-map"        : "dev-development as 7.6"
   },
   "require-dev" : {
     "friendsofphp/php-cs-fixer": "^3.9.5",
